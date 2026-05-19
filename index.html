@@ -468,6 +468,26 @@
             line-height: 1.8;
         }
 
+        .info-detail-card {
+            background: var(--bg-primary);
+            padding: 40px;
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-md);
+        }
+
+        .info-detail-card h4 {
+            color: var(--text-primary);
+        }
+
+        .info-detail-card ul {
+            margin-left: 20px;
+        }
+
+        .info-detail-card li {
+            margin: 8px 0;
+        }
+
         /* Kontak Section */
         .kontak {
             background: var(--bg-secondary);
@@ -814,7 +834,7 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h2 class="hero-title">Selamat Datang di Portal Resmi SPMB</h2>
+                <h2 class="hero-title">Selamat Datang Pusat Informasi SPMB SD NEGERI 3 KESIMAN 2026</h2>
                 <p class="hero-subtitle">Sistem Penerimaan Peserta Didik Baru SD Negeri 3 Kesiman</p>
                 <p class="hero-description">Temukan formulir pendaftaran, alur seleksi, infografis, dan layanan bantuan untuk memulai perjalanan pendidikan bersama kami.</p>
                 <div class="hero-cta">
@@ -841,31 +861,11 @@
                             <path d="M20 5V35M5 20H35M15 10L25 30M25 10L15 30" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <h3>Panduan Pendaftaran</h3>
-                    <p>Baca panduan lengkap dan petunjuk teknis pelaksanaan SPMB untuk memastikan pendaftaran berjalan lancar.</p>
-                    <a href="https://spmbsd.disdikporadps.id/uploads/Juknis-SPMB-2026.pdf" class="card-link" target="_blank">
-                        Download JUKNIS 2026
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 1V11M8 11L4 7M8 11L12 7M3 14H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="info-card">
-                    <div class="info-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 8H32C33.1046 8 34 8.89543 34 10V30C34 31.1046 33.1046 32 32 32H8C6.89543 32 6 31.1046 6 30V10C6 8.89543 6.89543 8 8 8Z" stroke="#16a34a" stroke-width="2"/>
-                            <path d="M6 12H34" stroke="#16a34a" stroke-width="2"/>
-                            <circle cx="10" cy="22" r="2" fill="#16a34a"/>
-                            <circle cx="20" cy="22" r="2" fill="#16a34a"/>
-                            <circle cx="30" cy="22" r="2" fill="#16a34a"/>
-                        </svg>
-                    </div>
-                    <h3>Pendaftaran Online</h3>
-                    <p>Surat pernyataan dapat diunduh melalui situs resmi SPMB Kota Denpasar atau klik link ini.</p>
+                    <h3>Panduan Pendaftaran & Surat Pernyataan</h3>
+                    <p>Baca panduan lengkap dan download surat pernyataan yang diperlukan untuk melengkapi pendaftaran Anda.</p>
                     <div style="display: flex; flex-direction: column; gap: 10px;">
-                        <a href="https://mbsd.disdikporadps.id/" class="card-link" target="_blank">
-                            Buka Portal SPMB Kota Denpasar
+                        <a href="https://spmbsd.disdikporadps.id/" class="card-link" target="_blank">
+                            Buka Situs SPMB
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M3 13H13M6 7L10 3M10 3H6M10 3V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -877,6 +877,23 @@
                             </svg>
                         </a>
                     </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 6H32C33.1046 6 34 6.89543 34 8V32C34 33.1046 33.1046 34 32 34H8C6.89543 34 6 33.1046 6 32V8C6 6.89543 6.89543 6 8 6Z" stroke="#16a34a" stroke-width="2"/>
+                            <path d="M20 16V24M16 20H24" stroke="#16a34a" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Hasil Seleksi</h3>
+                    <p>Cek hasil pengumuman SPMB Anda melalui situs resmi. Pengumuman hasil seleksi pada 29 Juni 2026.</p>
+                    <a href="https://spmbsd.disdikporadps.id/" class="card-link" target="_blank">
+                        Lihat Hasil Seleksi
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 13H13M6 7L10 3M10 3H6M10 3V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
                 </div>
 
                 <div class="info-card">
@@ -899,18 +916,21 @@
         </div>
     </section>
 
-    <!-- Alur Seleksi Section -->
+    <!-- Alur SPMB Section -->
     <section class="alur" id="alur">
         <div class="container">
-            <h2 class="section-title">Alur Seleksi</h2>
+            <h2 class="section-title">Alur SPMB</h2>
+            
+            <!-- Timeline -->
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-marker">
                         <span class="timeline-number">1</span>
                     </div>
                     <div class="timeline-content">
-                        <h3>Pendaftaran Online</h3>
-                        <p>Isi formulir pendaftaran di portal resmi dengan data calon siswa yang lengkap dan akurat.</p>
+                        <h3>Pendaftaran</h3>
+                        <p><strong>Tanggal:</strong> 22 — 25 Juni 2026</p>
+                        <p style="color: var(--text-secondary); font-size: 13px; margin-top: 8px;">Daftarkan calon siswa Anda dengan membawa berkas sesuaai dengan ketentuan. Dapat di cek di bagian persyartan</p>
                     </div>
                 </div>
 
@@ -919,8 +939,9 @@
                         <span class="timeline-number">2</span>
                     </div>
                     <div class="timeline-content">
-                        <h3>Verifikasi Data</h3>
-                        <p>Tim kami akan memverifikasi data pendaftaran yang telah Anda submit dalam sistem.</p>
+                        <h3>Pengumuman Hasil Seleksi</h3>
+                        <p><strong>Tanggal:</strong> 29 Juni 2026</p>
+                        <p style="color: var(--text-secondary); font-size: 13px; margin-top: 8px;">Cek hasil seleksi Anda di portal resmi SPMB</p>
                     </div>
                 </div>
 
@@ -929,18 +950,42 @@
                         <span class="timeline-number">3</span>
                     </div>
                     <div class="timeline-content">
-                        <h3>Pengumuman Hasil</h3>
-                        <p>Pengumuman hasil seleksi akan diumumkan sesuai jadwal yang telah ditentukan.</p>
+                        <h3>Daftar Ulang</h3>
+                        <p><strong>Tanggal:</strong> 30 Juni — 3 Juli 2026</p>
+                        <p style="color: var(--text-secondary); font-size: 13px; margin-top: 8px;"><strong>Jam Layanan:</strong> 09.00 — 13.00 WITA</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <span class="timeline-number">4</span>
+            <!-- Info Section -->
+            <div style="margin-top: 60px;">
+                <div class="info-detail-card">
+                    <h3 style="color: var(--primary-color); margin-bottom: 20px;">📋 Syarat-Syarat SPMB</h3>
+                    
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">Usia Minimal</h4>
+                        <p style="color: var(--text-secondary); line-height: 1.8;">Berusia minimal 6 tahun per 1 Juli 2026</p>
                     </div>
-                    <div class="timeline-content">
-                        <h3>Daftar Ulang</h3>
-                        <p>Lakukan daftar ulang di sekolah untuk menyelesaikan proses penerimaan peserta didik.</p>
+
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">Dokumen Wajib</h4>
+                        <ul style="list-style-position: inside; color: var(--text-secondary); line-height: 2;">
+                            <li>Fotokopi Kartu Keluarga</li>
+                            <li>Fotokopi Akta Kelahiran</li>
+                            <li>Membawa dokumen asli</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="font-size: 16px; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">Dokumen Tambahan</h4>
+                        <ul style="list-style-position: inside; color: var(--text-secondary); line-height: 2;">
+                            <li>Fotokopi ijazah TK (jika ada)</li>
+                            <li>Surat pernyataan tambahan</li>
+                        </ul>
+                        <p style="color: var(--text-secondary); font-size: 14px; margin-top: 12px;">
+                            Surat pernyataan tambahan dapat diunduh melalui 
+                            <a href="https://drive.google.com/drive/folders/1CKqFMXaWmvJ4TkbbOgdIDwSAogI1wxbR" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">Drive resmi kami</a>
+                        </p>
                     </div>
                 </div>
             </div>

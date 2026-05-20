@@ -3,42 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sistem Penerimaan Murid Baru (SPMB) SD Negeri 3 Kesiman Tahun Ajaran 2026/2027">
-    <meta name="keywords" content="SPMB, SD Negeri 3 Kesiman, Pendaftaran, Seleksi, Denpasar">
-    <meta name="author" content="SD Negeri 3 Kesiman">
-    <meta property="og:title" content="SPMB SD Negeri 3 Kesiman 2026/2027">
-    <meta property="og:description" content="Sistem Penerimaan Murid Baru SD Negeri 3 Kesiman">
-    <meta property="og:type" content="website">
-    <title>SPMB SD Negeri 3 Kesiman - Pendaftaran 2026/2027</title>
+    <meta name="description" content="Pusat Informasi Resmi SPMB SD Negeri 3 Kesiman Tahun Ajaran 2026/2027">
+    <meta name="keywords" content="SPMB, SD Negeri 3 Kesiman, Pendaftaran, Seleksi">
+    <meta property="og:title" content="SPMB SD Negeri 3 Kesiman">
+    <meta property="og:description" content="Sistem Penerimaan Peserta Didik Baru 2026/2027">
+    <meta property="og:image" content="https://cdn3.me-qr.com/constructor/user/1634930/1779076096.jpg">
+    <title>SPMB SD Negeri 3 Kesiman | Pendaftaran 2026/2027</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
+        :root {
+            --color-primary: #1e3a8a;
+            --color-primary-light: #3b82f6;
+            --color-primary-lighter: #dbeafe;
+            --color-secondary: #0f766e;
+            --color-secondary-light: #14b8a6;
+            --color-accent: #7c3aed;
+            --color-success: #059669;
+            --color-warning: #d97706;
+            --color-danger: #dc2626;
+            
+            --color-bg-primary: #ffffff;
+            --color-bg-secondary: #f8fafc;
+            --color-bg-tertiary: #f1f5f9;
+            --color-bg-dark: #0f172a;
+            
+            --color-text-primary: #0f172a;
+            --color-text-secondary: #475569;
+            --color-text-tertiary: #94a3b8;
+            
+            --color-border: #e2e8f0;
+            --color-border-light: #cbd5e1;
+            
+            --shadow-xs: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+            --shadow-sm: 0 1px 3px 0 rgba(15, 23, 42, 0.1);
+            --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.15);
+            --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.2);
+            --shadow-2xl: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
+            
+            --radius-sm: 6px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --radius-xl: 16px;
+            --radius-2xl: 20px;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #2563eb;
-            --primary-dark: #1e40af;
-            --primary-light: #3b82f6;
-            --secondary: #059669;
-            --danger: #dc2626;
-            --warning: #f59e0b;
-            --success: #10b981;
-            --gray-50: #f9fafb;
-            --gray-100: #f3f4f6;
-            --gray-200: #e5e7eb;
-            --gray-300: #d1d5db;
-            --gray-400: #9ca3af;
-            --gray-500: #6b7280;
-            --gray-600: #4b5563;
-            --gray-700: #374151;
-            --gray-800: #1f2937;
-            --gray-900: #111827;
-            --text-primary: #1f2937;
-            --text-secondary: #6b7280;
-            --bg-light: #ffffff;
-            --bg-gray: #f9fafb;
         }
 
         html {
@@ -46,567 +62,647 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Sora', sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e0e7ff 100%);
+            color: var(--color-text-primary);
             line-height: 1.6;
-            color: var(--text-primary);
-            background-color: var(--bg-light);
-            overflow-x: hidden;
+            min-height: 100vh;
         }
 
-        /* NAVBAR */
-        .navbar {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            color: white;
-            padding: 1rem 0;
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--color-bg-primary);
+            border-bottom: 1px solid var(--color-border);
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.7);
+            box-shadow: var(--shadow-sm);
         }
 
-        .navbar-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+        .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 16px 0;
         }
 
-        .navbar-brand {
-            font-size: 24px;
-            font-weight: 700;
+        .logo-container {
             display: flex;
             align-items: center;
-            gap: 10px;
-            text-decoration: none;
-            color: white;
+            gap: 14px;
+            flex: 1;
         }
 
-        .navbar-brand img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
+        .logo-image {
+            width: 52px;
+            height: 52px;
+            border-radius: var(--radius-lg);
+            object-fit: cover;
+            background: var(--color-bg-secondary);
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .navbar-menu {
-            display: flex;
-            gap: 30px;
-            list-style: none;
+        .logo-image:hover {
+            transform: scale(1.05);
         }
 
-        .navbar-menu a {
-            color: white;
-            text-decoration: none;
+        .school-info h1 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 2px;
+            letter-spacing: -0.5px;
+        }
+
+        .school-info p {
+            font-size: 11px;
+            color: var(--color-text-tertiary);
             font-weight: 500;
-            transition: opacity 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        .navbar-menu a:hover {
-            opacity: 0.8;
+        nav.desktop-nav {
+            display: flex;
+            gap: 40px;
         }
 
-        @media (max-width: 768px) {
-            .navbar-menu {
-                gap: 15px;
-                font-size: 14px;
-            }
-        }
-
-        /* HERO SECTION */
-        .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
+        nav.desktop-nav a {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
+        }
+
+        nav.desktop-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary-light));
+            transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        nav.desktop-nav a:hover {
+            color: var(--color-primary);
+        }
+
+        nav.desktop-nav a:hover::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: var(--color-text-primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 100px 20px;
             overflow: hidden;
         }
 
         .hero::before {
             content: '';
             position: absolute;
-            top: -50%;
+            top: -40%;
             right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 15s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -15%;
             width: 500px;
             height: 500px;
-            background: rgba(255,255,255,0.1);
+            background: radial-gradient(circle, rgba(20, 184, 166, 0.06) 0%, transparent 70%);
             border-radius: 50%;
-            animation: float 6s ease-in-out infinite;
+            animation: float 20s ease-in-out infinite 5s;
         }
 
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(20px); }
+            50% { transform: translateY(30px); }
         }
 
         .hero-content {
-            max-width: 900px;
-            margin: 0 auto;
             position: relative;
-            z-index: 1;
+            z-index: 10;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
         }
 
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
+        .hero-title {
+            font-size: 52px;
             font-weight: 700;
             line-height: 1.2;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
         }
 
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 30px;
-            opacity: 0.95;
+        .hero-subtitle {
+            font-size: 18px;
+            color: var(--color-text-secondary);
+            margin-bottom: 24px;
+            line-height: 1.8;
+            font-weight: 500;
         }
 
-        .hero-buttons {
+        .cta-group {
             display: flex;
-            gap: 15px;
+            gap: 16px;
             justify-content: center;
             flex-wrap: wrap;
+            margin-top: 32px;
         }
 
         .btn {
-            padding: 12px 28px;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
+            padding: 14px 32px;
+            border-radius: var(--radius-xl);
+            font-size: 14px;
             font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
             text-decoration: none;
-            display: inline-block;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: inherit;
         }
 
         .btn-primary {
-            background: white;
-            color: var(--primary);
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+            color: white;
+            box-shadow: var(--shadow-lg);
         }
 
         .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-2xl);
         }
 
         .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
+            background: var(--color-bg-primary);
+            color: var(--color-primary);
+            border: 2px solid var(--color-primary-lighter);
+            box-shadow: var(--shadow-md);
         }
 
         .btn-secondary:hover {
-            background: white;
-            color: var(--primary);
+            border-color: var(--color-primary);
+            background: var(--color-primary-lighter);
         }
 
-        @media (max-width: 768px) {
-            .hero {
-                padding: 60px 20px;
-            }
-            .hero h1 {
-                font-size: 32px;
-            }
-            .hero p {
-                font-size: 16px;
-            }
+        .btn-success {
+            background: linear-gradient(135deg, var(--color-success), #10b981);
+            color: white;
         }
 
-        /* STATS SECTION */
-        .stats {
-            background: var(--gray-50);
-            padding: 60px 20px;
+        .btn-success:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
         }
 
-        .stats-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            text-align: center;
-        }
-
-        .stat-card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .stat-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-
-        .stat-number {
-            font-size: 36px;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 10px;
-        }
-
-        .stat-label {
-            color: var(--text-secondary);
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* MAIN CONTENT */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
+        /* Sections */
         section {
             padding: 80px 20px;
+            position: relative;
+        }
+
+        .section-bg {
+            background: var(--color-bg-secondary);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .section-title {
-            font-size: 36px;
+            font-size: 42px;
             font-weight: 700;
-            margin-bottom: 50px;
-            color: var(--gray-900);
-            text-align: center;
-            position: relative;
+            margin-bottom: 16px;
+            color: var(--color-primary);
+            letter-spacing: -1px;
         }
 
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 4px;
-            background: var(--primary);
-            margin: 20px auto 0;
-            border-radius: 2px;
+        .section-subtitle {
+            font-size: 16px;
+            color: var(--color-text-secondary);
+            line-height: 1.8;
         }
 
-        /* ALUR SECTION */
-        .alur {
-            background: var(--bg-light);
-        }
-
-        .alur-grid {
+        /* Cards Grid */
+        .cards-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 28px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: var(--color-bg-primary);
+            border-radius: var(--radius-2xl);
+            padding: 40px;
+            border: 1px solid var(--color-border);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary-light));
+            opacity: 0;
+            transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card:hover {
+            border-color: var(--color-primary-lighter);
+            box-shadow: var(--shadow-xl);
+            transform: translateY(-8px);
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--color-primary);
+        }
+
+        .card p {
+            font-size: 14px;
+            color: var(--color-text-secondary);
+            margin-bottom: 24px;
+            line-height: 1.8;
+        }
+
+        .card-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            border-radius: var(--radius-lg);
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-link.primary {
+            background: var(--color-primary-lighter);
+            color: var(--color-primary);
+        }
+
+        .card-link.primary:hover {
+            background: var(--color-primary);
+            color: white;
+            transform: translateX(4px);
+        }
+
+        .card-link.success {
+            background: rgba(5, 150, 105, 0.1);
+            color: var(--color-success);
+        }
+
+        .card-link.success:hover {
+            background: var(--color-success);
+            color: white;
+        }
+
+        .card-link.danger {
+            background: rgba(220, 38, 38, 0.1);
+            color: var(--color-danger);
+        }
+
+        .card-link.danger:hover {
+            background: var(--color-danger);
+            color: white;
+        }
+
+        /* Timeline */
+        .timeline {
+            max-width: 1000px;
             margin: 0 auto;
         }
 
-        .alur-card {
-            background: white;
-            padding: 40px 30px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        .timeline-list {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 28px;
             position: relative;
-            transition: all 0.3s;
-            border-top: 4px solid var(--primary);
         }
 
-        .alur-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 19px;
+            top: 60px;
+            width: 2px;
+            height: calc(100% + 40px);
+            background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary-light) 100%);
         }
 
-        .alur-number {
-            display: inline-flex;
+        .timeline-item:last-child::before {
+            display: none;
+        }
+
+        .timeline-marker {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+            color: white;
+            display: flex;
             align-items: center;
             justify-content: center;
-            width: 50px;
-            height: 50px;
-            background: var(--primary);
-            color: white;
-            border-radius: 50%;
+            font-weight: 700;
+            position: relative;
+            z-index: 10;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .timeline-content h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 8px;
+        }
+
+        .timeline-date {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--color-secondary-light);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .timeline-content p {
+            font-size: 14px;
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+        }
+
+        /* Requirements Box */
+        .requirements-box {
+            background: var(--color-bg-primary);
+            border-radius: var(--radius-2xl);
+            padding: 48px;
+            border: 1px solid var(--color-border);
+            margin-top: 48px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .requirements-box h3 {
             font-size: 24px;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 36px;
+            color: var(--color-primary);
         }
 
-        .alur-card h3 {
-            font-size: 20px;
-            margin-bottom: 15px;
-            color: var(--gray-900);
+        .requirement-group {
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--color-border);
         }
 
-        .alur-card .date {
-            color: var(--primary);
-            font-weight: 600;
-            margin-bottom: 10px;
+        .requirement-group:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
         }
 
-        .alur-card p {
-            color: var(--text-secondary);
+        .requirement-group h4 {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--color-secondary-light);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .requirement-group ul {
+            list-style: none;
+        }
+
+        .requirement-group li {
             font-size: 14px;
+            color: var(--color-text-secondary);
+            padding-left: 28px;
+            position: relative;
+            margin-bottom: 8px;
             line-height: 1.6;
         }
 
-        /* PERSYARATAN SECTION */
-        .persyaratan {
-            background: var(--bg-gray);
-        }
-
-        .persyaratan-tabs {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .tab-btn {
-            padding: 10px 20px;
-            border: 2px solid var(--gray-300);
-            background: white;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s;
-            color: var(--text-secondary);
-        }
-
-        .tab-btn.active {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-        }
-
-        .tab-btn:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-        }
-
-        .tab-content {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            display: none;
-            animation: slideIn 0.3s ease-in-out;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .tab-content ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .tab-content li {
-            padding: 12px 0;
-            padding-left: 30px;
-            position: relative;
-            color: var(--text-primary);
-            line-height: 1.8;
-        }
-
-        .tab-content li::before {
+        .requirement-group li::before {
             content: '✓';
             position: absolute;
             left: 0;
-            color: var(--success);
+            color: var(--color-success);
             font-weight: bold;
-            font-size: 18px;
+            font-size: 16px;
         }
 
-        /* FAQ SECTION */
-        .faq {
-            background: var(--bg-light);
+        .requirement-group p {
+            font-size: 14px;
+            color: var(--color-text-secondary);
+            margin-top: 12px;
         }
 
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            background: white;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            border: 1px solid var(--gray-200);
-        }
-
-        .faq-question {
-            padding: 20px;
-            cursor: pointer;
-            font-weight: 600;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: var(--bg-gray);
-            transition: background 0.3s;
-        }
-
-        .faq-question:hover {
-            background: var(--gray-100);
-        }
-
-        .faq-toggle {
-            font-size: 20px;
-            transition: transform 0.3s;
-            color: var(--primary);
-        }
-
-        .faq-item.active .faq-toggle {
-            transform: rotate(180deg);
-        }
-
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-in-out;
-        }
-
-        .faq-item.active .faq-answer {
-            max-height: 500px;
-        }
-
-        .faq-answer p {
-            padding: 20px;
-            color: var(--text-secondary);
-            line-height: 1.8;
-        }
-
-        /* CONTACT SECTION */
-        .contact {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            color: white;
-        }
-
-        .contact-container {
-            max-width: 1200px;
-            margin: 0 auto;
+        /* Contact Cards */
+        .contact-cards {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 28px;
+            margin-bottom: 48px;
         }
 
-        .contact-info h3 {
-            font-size: 24px;
-            margin-bottom: 30px;
+        .contact-card {
+            background: var(--color-bg-primary);
+            border-radius: var(--radius-2xl);
+            padding: 36px;
+            text-align: center;
+            border: 1px solid var(--color-border);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .contact-item {
-            margin-bottom: 25px;
+        .contact-card:hover {
+            border-color: var(--color-primary-lighter);
+            box-shadow: var(--shadow-xl);
+            transform: translateY(-6px);
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+            color: white;
             display: flex;
-            gap: 15px;
-        }
-
-        .contact-icon {
-            display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: rgba(255,255,255,0.2);
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 auto 16px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: var(--color-primary);
+        }
+
+        .contact-role {
+            font-size: 12px;
+            color: var(--color-text-tertiary);
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        /* Social Section */
+        .social-box {
+            background: var(--color-bg-primary);
+            border-radius: var(--radius-2xl);
+            padding: 40px;
+            text-align: center;
+            border: 1px solid var(--color-border);
+        }
+
+        .social-box h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: var(--color-primary);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
-            flex-shrink: 0;
-        }
-
-        .contact-form {
-            background: rgba(255,255,255,0.95);
-            padding: 30px;
-            border-radius: 10px;
-            color: var(--text-primary);
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            font-size: 14px;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid var(--gray-300);
-            border-radius: 6px;
-            font-family: inherit;
-            font-size: 14px;
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-        }
-
-        .btn-submit {
-            background: var(--primary);
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
             color: white;
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 20px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .social-icon:hover {
+            transform: translateY(-6px) rotate(10deg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .social-icon.instagram {
+            background: linear-gradient(135deg, #f3a183, #f56040, #fd1d1d, #833ab4);
+        }
+
+        .social-username {
+            margin-top: 16px;
+            font-size: 14px;
+            color: var(--color-text-secondary);
+        }
+
+        .social-username a {
+            color: var(--color-primary);
+            text-decoration: none;
             font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
         }
 
-        .btn-submit:hover {
-            background: var(--primary-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
-        }
-
-        @media (max-width: 768px) {
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* FOOTER */
+        /* Footer */
         footer {
-            background: var(--gray-900);
+            background: var(--color-bg-dark);
             color: white;
-            padding: 50px 20px 20px;
-            margin-top: 60px;
+            padding: 60px 20px 24px;
         }
 
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
+        .footer-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 40px;
-            margin-bottom: 40px;
+            max-width: 1280px;
+            margin: 0 auto 40px;
         }
 
         .footer-section h4 {
-            margin-bottom: 20px;
-            font-size: 18px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .footer-section p {
+            font-size: 13px;
+            line-height: 1.8;
+            opacity: 0.7;
         }
 
         .footer-section ul {
@@ -618,437 +714,332 @@
         }
 
         .footer-section a {
-            color: rgba(255,255,255,0.7);
+            color: white;
             text-decoration: none;
-            transition: color 0.3s;
+            font-size: 13px;
+            opacity: 0.7;
+            transition: opacity 0.3s;
         }
 
         .footer-section a:hover {
-            color: white;
+            opacity: 1;
         }
 
         .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 20px;
+            max-width: 1280px;
+            margin: 0 auto;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
             text-align: center;
-            color: rgba(255,255,255,0.7);
-            font-size: 14px;
+            font-size: 12px;
+            opacity: 0.6;
         }
 
-        /* SCROLL TO TOP */
-        .scroll-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            background: var(--primary);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            transition: all 0.3s;
-            z-index: 999;
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        .scroll-to-top.show {
-            display: flex;
+        .card, .contact-card, .timeline-item {
+            animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .scroll-to-top:hover {
-            background: var(--primary-dark);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        .card:nth-child(2) {
+            animation-delay: 0.1s;
         }
 
-        /* UTILITIES */
-        .text-center {
-            text-align: center;
+        .card:nth-child(3) {
+            animation-delay: 0.2s;
         }
 
-        .mt-20 {
-            margin-top: 20px;
-        }
-
+        /* Responsive */
         @media (max-width: 768px) {
-            section {
-                padding: 50px 20px;
+            nav.desktop-nav {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .hero-title {
+                font-size: 36px;
             }
 
             .section-title {
+                font-size: 32px;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .requirements-box {
+                padding: 28px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .school-info h1 {
+                font-size: 16px;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .hero-title {
                 font-size: 28px;
+            }
+
+            .card {
+                padding: 24px;
+            }
+
+            .requirements-box {
+                padding: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="#" class="navbar-brand">
-                🎓 SPMB 3 Kesiman
-            </a>
-            <ul class="navbar-menu">
-                <li><a href="#alur">Alur</a></li>
-                <li><a href="#persyaratan">Persyaratan</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="https://cdn3.me-qr.com/constructor/user/1634930/1779076096.jpg" alt="SD Negeri 3 Kesiman" class="logo-image">
+                    <div class="school-info">
+                        <h1>SD Negeri 3 Kesiman</h1>
+                        <p>SPMB 2026/2027</p>
+                    </div>
+                </div>
+                <nav class="desktop-nav">
+                    <a href="#informasi">Informasi</a>
+                    <a href="#alur">Alur Seleksi</a>
+                    <a href="#kontak">Kontak</a>
+                </nav>
+                <button class="menu-toggle">☰</button>
+            </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- HERO -->
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Sistem Penerimaan Murid Baru</h1>
-            <p>SD Negeri 3 Kesiman Tahun Ajaran 2026/2027</p>
-            <p style="font-size: 16px; opacity: 0.9; margin-bottom: 30px;">Pendaftaran dibuka 22-25 Juni 2026</p>
-            <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="document.getElementById('alur').scrollIntoView()">Lihat Alur</button>
-                <a href="https://spmbsd.disdikporadps.id/" class="btn btn-secondary">Portal Resmi Denpasar</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- STATS -->
-    <section class="stats">
-        <div class="stats-container">
-            <div class="stat-card">
-                <div class="stat-number">22-25</div>
-                <div class="stat-label">Juni 2026</div>
-                <div style="margin-top: 10px; color: var(--text-secondary); font-size: 13px;">Tanggal Pendaftaran</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">3</div>
-                <div class="stat-label">Jalur Masuk</div>
-                <div style="margin-top: 10px; color: var(--text-secondary); font-size: 13px;">Domisili, Afirmasi, Mutasi</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">29</div>
-                <div class="stat-label">Juni 2026</div>
-                <div style="margin-top: 10px; color: var(--text-secondary); font-size: 13px;">Pengumuman Hasil</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">6+</div>
-                <div class="stat-label">Tahun</div>
-                <div style="margin-top: 10px; color: var(--text-secondary); font-size: 13px;">Usia Minimum</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ALUR -->
-    <section id="alur" class="alur">
         <div class="container">
-            <h2 class="section-title">Alur Pendaftaran</h2>
-            <div class="alur-grid">
-                <div class="alur-card">
-                    <div class="alur-number">1</div>
-                    <h3>Persiapan Dokumen</h3>
-                    <div class="date">Kapan Saja</div>
-                    <p>Siapkan dokumen yang diperlukan: KK, Akta Kelahiran, KIA, dan dokumen pendukung lainnya sesuai jalur yang dipilih.</p>
-                </div>
-                <div class="alur-card">
-                    <div class="alur-number">2</div>
-                    <h3>Pendaftaran</h3>
-                    <div class="date">22-25 Juni 2026</div>
-                    <p>Datang ke sekolah membawa dokumen asli. Proses verifikasi dokumen dan pencatatan data calon murid dilakukan di tempat.</p>
-                </div>
-                <div class="alur-card">
-                    <div class="alur-number">3</div>
-                    <h3>Pengumuman</h3>
-                    <div class="date">29 Juni 2026</div>
-                    <p>Cek hasil seleksi melalui portal resmi SPMB Denpasar atau pengumuman di sekolah. Status diterima atau mengalami antri.</p>
-                </div>
-                <div class="alur-card">
-                    <div class="alur-number">4</div>
-                    <h3>Daftar Ulang</h3>
-                    <div class="date">30 Juni - 3 Juli 2026</div>
-                    <p>Siswa yang diterima wajib melakukan daftar ulang ke sekolah penerima dengan membawa surat pernyataan daftar ulang.</p>
+            <div class="hero-content">
+                <h2 class="hero-title">Selamat Datang di Portal SPMB</h2>
+                <p class="hero-subtitle">Sistem Penerimaan Peserta Didik Baru SD Negeri 3 Kesiman 2026/2027</p>
+                <p class="hero-subtitle">Temukan informasi pendaftaran SPMB seperti formulir pendaftaran, alur seleksi, infografis, dan layanan bantuan untuk memulai perjalanan pendidikan bersama kami.</p>
+                <div class="cta-group">
+                    <a href="https://spmbsd.disdikporadps.id/" class="btn btn-primary" target="_blank">Portal SPMB Kota Denpasar</a>
+                    <a href="#kontak" class="btn btn-secondary">Hubungi Kami</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PERSYARATAN -->
-    <section id="persyaratan" class="persyaratan">
+    <!-- Informasi Section -->
+    <section class="section-bg" id="informasi">
         <div class="container">
-            <h2 class="section-title">Persyaratan SPMB</h2>
+            <div class="section-header">
+                <h2 class="section-title">Informasi Penting</h2>
+            </div>
             
-            <div class="persyaratan-tabs">
-                <button class="tab-btn active" onclick="switchTab(event, 'umum')">Umum</button>
-                <button class="tab-btn" onclick="switchTab(event, 'domisili')">Domisili</button>
-                <button class="tab-btn" onclick="switchTab(event, 'afirmasi')">Afirmasi</button>
-                <button class="tab-btn" onclick="switchTab(event, 'mutasi')">Mutasi</button>
-            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Panduan Pendaftaran & Surat Pernyataan</h3>
+                    <p>Baca panduan lengkap dan download surat pernyataan yang diperlukan untuk melengkapi pendaftaran Anda.</p>
+                    <div class="card-links">
+                        <a href="https://spmbsd.disdikporadps.id/" class="card-link primary" target="_blank">Buka Situs SPMB</a>
+                        <a href="https://spmbsd.disdikporadps.id/uploads/Juknis-SPMB-2026.pdf" class="card-link primary" target="_blank">Download JUKNIS SPMB</a>
+                        <a href="https://drive.google.com/drive/folders/1CKqFMXaWmvJ4TkbbOgdIDwSAogI1wxbR?usp=drive_link" class="card-link danger" target="_blank">Download Surat Pernyataan</a>
+                    </div>
+                </div>
 
-            <div id="umum" class="tab-content active">
-                <h3 style="margin-bottom: 25px; color: var(--gray-900);">Persyaratan Umum</h3>
-                <ul>
-                    <li>Calon Murid berusia 7-9 tahun pada tanggal 1 Juli 2026 diprioritaskan</li>
-                    <li>Berusia paling rendah 6 tahun pada tanggal 1 Juli 2026</li>
-                    <li>Untuk usia 5 tahun 6 bulan diperlukan rekomendasi psikolog profesional (untuk potensi kecerdasan istimewa)</li>
-                    <li>Tidak perlu mengikuti tes membaca, menulis, berhitung</li>
-                    <li>Untuk calon murid yatim/piatu/yatim piatu wajib melampirkan akta kematian atau perceraian</li>
-                    <li><a href="https://spmbsd.disdikporadps.id/uploads/Surat_Pernyataan_Mendaftar_3_Sekolah.doc" target="_blank">Surat Pernyataan Mendaftar 3 Sekolah</a></li>
-                    <li><a href="https://spmbsd.disdikporadps.id/uploads/Surat_Pernyataan_Keabsahan_Dokumen.doc" target="_blank">Surat Pernyataan Keabsahan Dokumen</a></li>
-                </ul>
-            </div>
+                <div class="card">
+                    <h3>Hasil Seleksi</h3>
+                    <p>Cek hasil pengumuman SPMB Anda melalui situs resmi. Pengumuman hasil seleksi pada 29 Juni 2026.</p>
+                    <div class="card-links">
+                        <a href="https://spmbsd.disdikporadps.id/" class="card-link success" target="_blank">Lihat Hasil Seleksi</a>
+                    </div>
+                </div>
 
-            <div id="domisili" class="tab-content">
-                <h3 style="margin-bottom: 25px; color: var(--gray-900);">Jalur Domisili</h3>
-                <ul>
-                    <li>Memiliki Akta Kelahiran atau Surat Keterangan Lahir (dilegalisir)</li>
-                    <li>Memiliki Kartu Keluarga Kota Denpasar (diterbitkan paling singkat 1 Juni 2025)</li>
-                    <li>Status dalam KK: Anak, Famili Lain, atau Cucu</li>
-                    <li>Tidak dipersyaratkan telah mengikuti TK/RA</li>
-                    <li>Membawa dokumen asli untuk verifikasi</li>
-                </ul>
-            </div>
-
-            <div id="afirmasi" class="tab-content">
-                <h3 style="margin-bottom: 25px; color: var(--gray-900);">Jalur Afirmasi</h3>
-                <ul>
-                    <li>Memiliki Akta Kelahiran atau Surat Keterangan Lahir (dilegalisir)</li>
-                    <li>Memiliki Kartu Keluarga Kota Denpasar (diterbitkan paling singkat 1 Juni 2025)</li>
-                    <li>Status dalam KK: Anak, Famili Lain, atau Cucu</li>
-                    <li>Untuk penyandang disabilitas: rekomendasi dari Pusat Layanan Disabilitas atau dokter spesialis</li>
-                    <li>Keluarga kurang mampu: Surat Pengantar DTSEN dari Dinas Sosial</li>
-                    <li>Tidak dipersyaratkan telah mengikuti TK/RA</li>
-                </ul>
-            </div>
-
-            <div id="mutasi" class="tab-content">
-                <h3 style="margin-bottom: 25px; color: var(--gray-900);">Jalur Mutasi</h3>
-                <ul>
-                    <li>Memiliki Akta Kelahiran atau Surat Keterangan Lahir (dilegalisir)</li>
-                    <li>Wajib memiliki Kartu Keluarga</li>
-                    <li>Untuk mutasi tugas orang tua: Surat Penugasan dari instansi/perusahaan (sejak Juni 2025)</li>
-                    <li>Kasus khusus (konflik/bencana): Surat keterangan yang sah dari instansi terkait</li>
-                    <li>Untuk pendidik/tenaga kependidikan: SK mengajar dari Kepala Sekolah tempat kerja</li>
-                    <li>Tidak dipersyaratkan telah mengikuti TK/RA</li>
-                </ul>
+                <div class="card">
+                    <h3>Bantuan & Dukungan</h3>
+                    <p>Memiliki pertanyaan? Hubungi tim kami melalui WhatsApp atau Instagram untuk mendapatkan bantuan segera.</p>
+                    <div class="card-links">
+                        <a href="#kontak" class="card-link primary">Hubungi Tim</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="faq">
+    <!-- Alur Section -->
+    <section id="alur">
         <div class="container">
-            <h2 class="section-title">Pertanyaan Umum</h2>
-            <div class="faq-container">
-                <div class="faq-item" onclick="toggleFaq(this)">
-                    <div class="faq-question">
-                        <span>Berapa usia minimal untuk mendaftar?</span>
-                        <span class="faq-toggle">▼</span>
+            <div class="section-header">
+                <h2 class="section-title">Alur Seleksi</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-list">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">1</div>
+                        <div class="timeline-content">
+                            <h3>Pendaftaran</h3>
+                            <div class="timeline-date">22 — 25 Juni 2026 | 09.00 — 13.00 WITA</div>
+                            <p>Daftarkan calon siswa anda dengan membawa berkas sesuai dengan ketentuan. Dapat di cek di bagian persyaratan.</p>
+                        </div>
                     </div>
-                    <div class="faq-answer">
-                        <p>Usia minimal adalah 6 tahun per tanggal 1 Juli 2026. Namun calon murid berusia 7-9 tahun pada tanggal tersebut akan diprioritaskan dalam seleksi.</p>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2</div>
+                        <div class="timeline-content">
+                            <h3>Pengumuman Hasil Seleksi</h3>
+                            <div class="timeline-date">29 Juni 2026</div>
+                            <p>Cek hasil seleksi Anda di portal resmi SPMB</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">3</div>
+                        <div class="timeline-content">
+                            <h3>Daftar Ulang</h3>
+                            <div class="timeline-date">30 Juni — 3 Juli 2026</div>
+                            <p><strong>Jam Layanan:</strong> 09.00 — 13.00 WITA</p>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="faq-item" onclick="toggleFaq(this)">
-                    <div class="faq-question">
-                        <span>Kapan waktu pendaftaran dibuka?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Pendaftaran dibuka pada tanggal 22-25 Juni 2026, pukul 09.00-13.00 WITA. Pendaftaran dilakukan secara luring (datang langsung) ke sekolah tujuan dengan membawa dokumen asli.</p>
-                    </div>
+            <div class="requirements-box">
+                <h3>Syarat-Syarat SPMB SD Negeri 3 Kesiman</h3>
+                
+                <div class="requirement-group">
+                    <h4>Usia Minimal</h4>
+                    <p>Berusia minimal 6 tahun per 1 Juli 2026</p>
                 </div>
 
-                <div class="faq-item" onclick="toggleFaq(this)">
-                    <div class="faq-question">
-                        <span>Dokumen apa saja yang harus dibawa?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Dokumen yang wajib dibawa antara lain: Kartu Keluarga, Akta Kelahiran atau Surat Keterangan Lahir, KIA, serta surat pernyataan sesuai jalur pendaftaran yang dipilih (Domisili, Afirmasi, atau Mutasi).</p>
-                    </div>
+                <div class="requirement-group">
+                    <h4>Dokumen Wajib</h4>
+                    <ul>
+                        <li>Fotokopi Kartu Keluarga</li>
+                        <li>Fotokopi Akta Kelahiran</li>
+                        <li>Fotokopi KIA</li>
+                        <li>Membawa dokumen asli</li>
+                    </ul>
                 </div>
 
-                <div class="faq-item" onclick="toggleFaq(this)">
-                    <div class="faq-question">
-                        <span>Berapa banyak sekolah yang bisa didaftar?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Calon murid maksimal dapat mendaftar di 3 (tiga) sekolah dasar. Surat Pernyataan Mendaftar 3 Sekolah wajib dibuat dan ditandatangani oleh orang tua/wali.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item" onclick="toggleFaq(this)">
-                    <div class="faq-question">
-                        <span>Kapan pengumuman hasil seleksi?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Pengumuman hasil seleksi dilaksanakan pada tanggal 29 Juni 2026, pukul 09.00 WITA. Dapat dicek melalui portal resmi SPMB Denpasar atau pengumuman di sekolah tujuan.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item" onclick="toggleFaq(this)">
-                    <div class="faq-question">
-                        <span>Apa itu jalur Domisili, Afirmasi, dan Mutasi?</span>
-                        <span class="faq-toggle">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p><strong>Domisili:</strong> Untuk calon murid yang berdomisili di wilayah Kota Denpasar. <strong>Afirmasi:</strong> Untuk calon murid penyandang disabilitas atau keluarga kurang mampu. <strong>Mutasi:</strong> Untuk calon murid dengan orang tua yang mendapat mutasi tugas atau kasus khusus seperti bencana alam.</p>
-                    </div>
+                <div class="requirement-group">
+                    <h4>Dokumen Tambahan</h4>
+                    <ul>
+                        <li>Fotokopi ijazah TK</li>
+                        <li>Surat pernyataan tambahan</li>
+                    </ul>
+                    <p>Surat pernyataan tambahan dapat diunduh melalui <a href="https://drive.google.com/drive/folders/1CKqFMXaWmvJ4TkbbOgdIDwSAogI1wxbR" target="_blank" style="color: var(--color-primary); font-weight: 600;">Drive resmi kami</a></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
+    <!-- Kontak Section -->
+    <section class="section-bg" id="kontak">
         <div class="container">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>📍 Hubungi Kami</h3>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <strong>Alamat</strong>
-                            <p>Jl. Bakung No.16, Kesiman Kertalangu<br>Kec. Denpasar Timur, Kota Denpasar, Bali</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                            <strong>WhatsApp</strong>
-                            <p><a href="https://wa.me/6281246598077" target="_blank" style="color: white; text-decoration: underline;">Pak Iwan: +62 812-4659-8077</a></p>
-                            <p><a href="https://wa.me/6281529366831" target="_blank" style="color: white; text-decoration: underline;">Pak Komang: +62 815-2936-6831</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div>
-                            <strong>Instagram</strong>
-                            <p><a href="https://instagram.com/sdn_3kesiman" target="_blank" style="color: white; text-decoration: underline;">@sdn_3kesiman</a></p>
-                        </div>
-                    </div>
+            <div class="section-header">
+                <h2 class="section-title">Hubungi Kami</h2>
+                <p class="section-subtitle">Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi tim kami melalui WhatsApp</p>
+            </div>
+            
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="avatar">PI</div>
+                    <h3>Pak Iwan</h3>
+                    <p class="contact-role">Koordinator SPMB</p>
+                    <a href="https://wa.me/6281246598077" class="btn btn-success" target="_blank" style="width: 100%; justify-content: center;">Chat WhatsApp</a>
                 </div>
 
-                <div class="contact-form">
-                    <h3 style="margin-bottom: 25px;">Pertanyaan</h3>
-                    <form onsubmit="handleSubmit(event)">
-                        <div class="form-group">
-                            <label>Nama Lengkap</label>
-                            <input type="text" required placeholder="Nama Anda">
-                        </div>
-                        <div class="form-group">
-                            <label>Email / WhatsApp</label>
-                            <input type="text" required placeholder="Email atau nomor WhatsApp">
-                        </div>
-                        <div class="form-group">
-                            <label>Pertanyaan Anda</label>
-                            <textarea required placeholder="Tuliskan pertanyaan atau pesan Anda..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">Kirim Pertanyaan</button>
-                    </form>
+                <div class="contact-card">
+                    <div class="avatar">KM</div>
+                    <h3>Pak Komang</h3>
+                    <p class="contact-role">Kepala Sekolah</p>
+                    <a href="https://wa.me/6281529366831" class="btn btn-success" target="_blank" style="width: 100%; justify-content: center;">Chat WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="social-box">
+                <h3>Ikuti Media Sosial Kami</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/sdn_3kesiman/?hl=en" class="social-icon instagram" target="_blank">📷</a>
+                </div>
+                <div class="social-username">
+                    <a href="https://www.instagram.com/sdn_3kesiman/?hl=en" target="_blank">@sdn_3kesiman</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
-        <div class="footer-content">
+        <div class="footer-grid">
             <div class="footer-section">
-                <h4>Tentang Sekolah</h4>
-                <p style="color: rgba(255,255,255,0.7); line-height: 1.6;">SD Negeri 3 Kesiman berkomitmen memberikan pendidikan berkualitas untuk generasi penerus bangsa dengan kurikulum yang relevan dan tenaga pendidik berpengalaman.</p>
+                <h4>Tentang Kami</h4>
+                <p>SD Negeri 3 Kesiman berkomitmen memberikan pendidikan berkualitas untuk generasi penerus bangsa.</p>
             </div>
             <div class="footer-section">
                 <h4>Tautan Cepat</h4>
                 <ul>
-                    <li><a href="#alur">Alur Pendaftaran</a></li>
-                    <li><a href="#persyaratan">Persyaratan</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="https://spmbsd.disdikporadps.id/">Portal SPMB Denpasar</a></li>
+                    <li><a href="#informasi">Informasi</a></li>
+                    <li><a href="#alur">Alur Seleksi</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                    <li><a href="https://spmbsd.disdikporadps.id/" target="_blank">Portal SPMB Kota Denpasar</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Dokumen Penting</h4>
-                <ul>
-                    <li><a href="https://spmbsd.disdikporadps.id/uploads/Juknis-SPMB-2026.pdf" target="_blank">Juknis SPMB 2026</a></li>
-                    <li><a href="https://spmbsd.disdikporadps.id/uploads/Surat_Pernyataan_Mendaftar_3_Sekolah.doc" target="_blank">Surat Pernyataan</a></li>
-                    <li><a href="https://drive.google.com/drive/folders/1CKqFMXaWmvJ4TkbbOgdIDwSAogI1wxbR" target="_blank">Drive Dokumen</a></li>
-                </ul>
+                <h4>Kontak</h4>
+                <p>SD Negeri 3 Kesiman<br>Jl. Bakung No.16, Kesiman Kertalangu<br>Kec. Denpasar Tim., Kota Denpasar<br>Bali, Indonesia</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 SD Negeri 3 Kesiman. Semua hak dilindungi. | Sistem Penerimaan Murid Baru Tahun 2026/2027</p>
+            <p>&copy; 2026 SD Negeri 3 Kesiman. Semua hak dilindungi. | Powered by <a href="https://github.com" target="_blank" style="color: white;">GitHub Pages</a></p>
         </div>
     </footer>
 
-    <!-- SCROLL TO TOP -->
-    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">↑</button>
-
     <script>
-        // Tab switching
-        function switchTab(e, tabName) {
-            e.preventDefault();
-            
-            // Hide all tabs
-            document.querySelectorAll('.tab-content').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            
-            // Remove active from all buttons
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            // Show selected tab
-            document.getElementById(tabName).classList.add('active');
-            e.target.classList.add('active');
-        }
-
-        // FAQ toggle
-        function toggleFaq(element) {
-            element.classList.toggle('active');
-        }
-
-        // Scroll to top
-        window.addEventListener('scroll', () => {
-            const btn = document.getElementById('scrollToTop');
-            if (window.scrollY > 300) {
-                btn.classList.add('show');
-            } else {
-                btn.classList.remove('show');
-            }
-        });
-
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        // Form submission
-        function handleSubmit(e) {
-            e.preventDefault();
-            const form = e.target;
-            const name = form.elements[0].value;
-            const email = form.elements[1].value;
-            const message = form.elements[2].value;
-            
-            // WhatsApp link
-            const waLink = `https://wa.me/6281246598077?text=Nama: ${name}%0AEmail/WA: ${email}%0APertanyaan: ${message}`;
-            window.open(waLink, '_blank');
-            
-            form.reset();
-        }
-
-        // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
-                if (href !== '#' && document.querySelector(href)) {
+                if (href !== '#') {
                     e.preventDefault();
-                    document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
                 }
             });
         });

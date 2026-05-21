@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPMB SD Negeri 3 Kesiman | Pendaftaran 2026/2027</title>
-    <meta name="description" content="Pusat Informasi Resmi SPMB SD Negeri 3 Kesiman Tahun Ajaran 2026/2027">
-    <meta name="keywords" content="SPMB, SD Negeri 3 Kesiman, Pendaftaran, Seleksi 2026/2027">
-    <meta name="og:title" content="SPMB SD Negeri 3 Kesiman">
-    <meta name="og:description" content="Sistem Penerimaan Peserta Didik Baru 2026/2027">
+    <meta name="description" content="Pusat Informasi SPMB SD Negeri 3 Kesiman Tahun Ajaran 2026/2027">
     
     <style>
         * {
@@ -17,23 +14,22 @@
         }
 
         :root {
-            --primary: #1E40AF;
-            --primary-dark: #1e3a8a;
-            --primary-light: #3b82f6;
-            --secondary: #F59E0B;
-            --success: #10B981;
-            --danger: #EF4444;
-            --gray-50: #F9FAFB;
-            --gray-100: #F3F4F6;
-            --gray-200: #E5E7EB;
-            --gray-300: #D1D5DB;
-            --gray-600: #4B5563;
-            --gray-700: #374151;
-            --gray-900: #111827;
+            --primary: #D97706;
+            --primary-dark: #92400e;
+            --primary-light: #f97316;
+            --accent: #059669;
+            --danger: #DC2626;
+            --gray-50: #FAFAFA;
+            --gray-100: #F4F4F5;
+            --gray-200: #E4E4E7;
+            --gray-300: #D4D4D8;
+            --gray-600: #52525B;
+            --gray-700: #3F3F46;
+            --gray-900: #18181B;
             --white: #FFFFFF;
-            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
         }
 
         html {
@@ -41,13 +37,13 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: var(--gray-700);
             background-color: var(--gray-50);
         }
 
-        /* ============= HEADER & NAVBAR ============= */
+        /* HEADER & NAVBAR */
         header {
             background: var(--white);
             box-shadow: var(--shadow-md);
@@ -59,14 +55,14 @@
         nav {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 1rem;
+            padding: 1.2rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 700;
             color: var(--primary);
             text-decoration: none;
@@ -76,31 +72,14 @@
         }
 
         .logo img {
-            width: 45px;
-            height: 45px;
+            width: 40px;
+            height: 40px;
             object-fit: contain;
-        }
-
-        .logo span {
-            display: flex;
-            flex-direction: column;
-            gap: 0.1rem;
-        }
-
-        .logo-text-main {
-            font-size: 1.1rem;
-            font-weight: 700;
-        }
-
-        .logo-text-sub {
-            font-size: 0.75rem;
-            color: var(--gray-600);
-            font-weight: 500;
         }
 
         .nav-menu {
             display: flex;
-            gap: 2rem;
+            gap: 2.5rem;
             list-style: none;
         }
 
@@ -108,6 +87,7 @@
             color: var(--gray-700);
             text-decoration: none;
             font-weight: 500;
+            font-size: 0.95rem;
             transition: color 0.3s;
         }
 
@@ -119,7 +99,7 @@
             display: none;
             flex-direction: column;
             cursor: pointer;
-            gap: 5px;
+            gap: 6px;
         }
 
         .hamburger span {
@@ -130,28 +110,24 @@
             transition: all 0.3s;
         }
 
-        /* ============= HERO SECTION ============= */
+        /* HERO */
         .hero {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: var(--white);
-            padding: 4rem 1rem;
+            padding: 5rem 2rem;
             text-align: center;
         }
 
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             margin-bottom: 1rem;
             font-weight: 700;
+            line-height: 1.3;
         }
 
         .hero p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
             opacity: 0.95;
         }
 
@@ -162,11 +138,12 @@
             flex-wrap: wrap;
         }
 
+        /* BUTTONS */
         .btn {
-            padding: 0.75rem 1.5rem;
+            padding: 0.8rem 1.8rem;
             border: none;
             border-radius: 0.5rem;
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s;
@@ -175,65 +152,79 @@
         }
 
         .btn-primary {
-            background: var(--secondary);
+            background: var(--primary);
             color: var(--white);
         }
 
         .btn-primary:hover {
-            background: #d97706;
+            background: var(--primary-dark);
             transform: translateY(-2px);
             box-shadow: var(--shadow-lg);
         }
 
-        .btn-secondary {
+        .btn-white {
             background: var(--white);
             color: var(--primary);
         }
 
-        .btn-secondary:hover {
+        .btn-white:hover {
             background: var(--gray-100);
             transform: translateY(-2px);
         }
 
-        .btn-success {
-            background: var(--success);
+        .btn-accent {
+            background: var(--accent);
             color: var(--white);
         }
 
-        .btn-success:hover {
-            background: #059669;
+        .btn-accent:hover {
+            background: #047857;
             transform: translateY(-2px);
             box-shadow: var(--shadow-lg);
         }
 
-        /* ============= CONTAINER & SPACING ============= */
+        .btn-download {
+            background: var(--primary);
+            color: var(--white);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.7rem 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .btn-download:hover {
+            background: var(--primary-dark);
+        }
+
+        /* CONTAINER */
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 0 1rem;
+            padding: 0 2rem;
         }
 
         section {
-            padding: 4rem 1rem;
+            padding: 4rem 0;
         }
 
         .section-title {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 700;
             color: var(--gray-900);
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
             text-align: center;
         }
 
-        /* ============= INFO BOXES ============= */
-        .info-grid {
+        /* INFO CARDS */
+        .cards-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
         }
 
-        .info-box {
+        .card {
             background: var(--white);
             padding: 2rem;
             border-radius: 0.75rem;
@@ -242,182 +233,180 @@
             border-top: 4px solid var(--primary);
         }
 
-        .info-box:hover {
+        .card:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow-lg);
         }
 
-        .info-box h3 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .info-box p {
-            color: var(--gray-600);
-            line-height: 1.8;
-        }
-
-        /* ============= TIMELINE ============= */
-        .timeline {
-            position: relative;
-            padding: 2rem 0;
-        }
-
-        .timeline-item {
-            display: grid;
-            grid-template-columns: 150px 1fr;
-            gap: 2rem;
-            margin-bottom: 2rem;
-            position: relative;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: 75px;
-            top: 40px;
-            width: 2px;
-            height: calc(100% + 2rem);
-            background: var(--primary);
-        }
-
-        .timeline-item:last-child::before {
-            display: none;
-        }
-
-        .timeline-marker {
-            width: 150px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .timeline-dot {
-            width: 20px;
-            height: 20px;
-            background: var(--primary);
-            border-radius: 50%;
-            margin-left: 70px;
-            margin-top: 10px;
-            border: 3px solid var(--white);
-            box-shadow: var(--shadow-md);
-        }
-
-        .timeline-date {
-            font-weight: 700;
-            color: var(--primary);
-            margin-top: 0.5rem;
-        }
-
-        .timeline-content {
-            background: var(--white);
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .timeline-content h3 {
-            color: var(--gray-900);
-            margin-bottom: 0.5rem;
-        }
-
-        .timeline-content p {
-            color: var(--gray-600);
-            font-size: 0.95rem;
-        }
-
-        /* ============= REQUIREMENTS TABLE ============= */
-        .requirements {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 0.75rem;
-            box-shadow: var(--shadow-md);
-            margin-bottom: 2rem;
-        }
-
-        .requirements h3 {
+        .card h3 {
             color: var(--primary);
             margin-bottom: 1rem;
             font-size: 1.2rem;
         }
 
-        .requirements ul {
-            list-style: none;
-            margin-left: 0;
+        .card p {
+            color: var(--gray-600);
+            font-size: 0.95rem;
+            line-height: 1.7;
         }
 
-        .requirements li {
-            padding: 0.75rem 0;
-            color: var(--gray-700);
+        /* TIMELINE */
+        .timeline {
+            margin-top: 2rem;
+        }
+
+        .timeline-item {
+            background: var(--white);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: var(--shadow-sm);
+            border-left: 5px solid var(--primary);
+        }
+
+        .timeline-item h3 {
+            color: var(--gray-900);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .timeline-date {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .timeline-item p {
+            color: var(--gray-600);
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .timeline-item ul {
+            list-style: none;
+            margin-top: 0.75rem;
+        }
+
+        .timeline-item li {
+            color: var(--gray-600);
+            margin-bottom: 0.4rem;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.9rem;
+        }
+
+        .timeline-item li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        /* STEPS */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .step {
+            background: var(--white);
+            padding: 1.8rem;
+            border-radius: 0.75rem;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .step:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .step-number {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .step h3 {
+            color: var(--gray-900);
+            margin-bottom: 0.75rem;
+            font-size: 1.05rem;
+        }
+
+        .step p {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* REQUIREMENTS */
+        .req-box {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 0.75rem;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 1.5rem;
+        }
+
+        .req-box h3 {
+            color: var(--primary);
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+        }
+
+        .req-box ul {
+            list-style: none;
+        }
+
+        .req-box li {
+            color: var(--gray-600);
+            padding: 0.6rem 0;
             border-bottom: 1px solid var(--gray-200);
             display: flex;
             align-items: flex-start;
             gap: 0.75rem;
+            font-size: 0.9rem;
         }
 
-        .requirements li::before {
+        .req-box li::before {
             content: '✓';
-            color: var(--success);
+            color: var(--accent);
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             flex-shrink: 0;
         }
 
-        .requirements li:last-child {
+        .req-box li:last-child {
             border-bottom: none;
         }
 
-        /* ============= CTA FORM ============= */
-        .cta-form {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 0.75rem;
-            box-shadow: var(--shadow-md);
-            max-width: 500px;
-            margin: 2rem auto;
-        }
-
-        .cta-form h3 {
-            color: var(--primary);
-            margin-bottom: 1.5rem;
+        .req-download {
+            background: var(--gray-50);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
             text-align: center;
+            margin-top: 1.5rem;
         }
 
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
+        .req-download p {
             color: var(--gray-700);
             font-weight: 500;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
         }
 
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid var(--gray-300);
-            border-radius: 0.5rem;
-            font-size: 1rem;
-            font-family: inherit;
-            transition: border-color 0.3s;
+        .download-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        /* ============= FAQ SECTION ============= */
+        /* FAQ */
         .faq-item {
             background: var(--white);
             border-left: 4px solid var(--primary);
@@ -430,22 +419,23 @@
         .faq-question {
             color: var(--gray-900);
             font-weight: 600;
-            margin-bottom: 0.75rem;
             cursor: pointer;
             user-select: none;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            font-size: 0.95rem;
         }
 
         .faq-toggle {
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             transition: transform 0.3s;
+            flex-shrink: 0;
         }
 
         .faq-answer {
@@ -453,6 +443,7 @@
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.3s;
+            font-size: 0.9rem;
         }
 
         .faq-item.active .faq-answer {
@@ -466,11 +457,12 @@
             transform: rotate(180deg);
         }
 
-        /* ============= CONTACT SECTION ============= */
+        /* CONTACT */
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
         }
 
         .contact-card {
@@ -488,38 +480,61 @@
         }
 
         .contact-avatar {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             background: var(--primary);
             color: var(--white);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
+            font-size: 1.8rem;
             margin: 0 auto 1rem;
         }
 
         .contact-card h3 {
             color: var(--gray-900);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
+            font-size: 1.05rem;
         }
 
         .contact-card p {
             color: var(--gray-600);
-            font-size: 0.9rem;
-            margin-bottom: 1.5rem;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
         }
 
-        /* ============= FOOTER ============= */
+        .address-box {
+            background: var(--gray-50);
+            padding: 2rem;
+            border-radius: 0.75rem;
+            border-left: 4px solid var(--accent);
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .address-box h3 {
+            color: var(--gray-900);
+            font-size: 1.05rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .address-box p {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        /* FOOTER */
         footer {
-            background: var(--gray-900);
+            background: var(--primary-dark);
             color: var(--white);
-            padding: 3rem 1rem 1rem;
+            padding: 3rem 2rem 1.5rem;
+            margin-top: 4rem;
         }
 
         .footer-content {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -529,7 +544,14 @@
 
         .footer-section h4 {
             margin-bottom: 1rem;
-            color: var(--secondary);
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+
+        .footer-section p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.85rem;
+            line-height: 1.7;
         }
 
         .footer-section ul {
@@ -537,26 +559,37 @@
         }
 
         .footer-section a {
-            color: var(--gray-300);
+            color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
             display: block;
             margin-bottom: 0.5rem;
+            font-size: 0.85rem;
             transition: color 0.3s;
         }
 
         .footer-section a:hover {
-            color: var(--secondary);
+            color: var(--primary);
         }
 
         .footer-bottom {
-            border-top: 1px solid var(--gray-700);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             padding-top: 1.5rem;
             text-align: center;
-            color: var(--gray-400);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
         }
 
-        /* ============= RESPONSIVE ============= */
+        /* BG SECTIONS */
+        .bg-light {
+            background: var(--gray-50);
+        }
+
+        /* RESPONSIVE */
         @media (max-width: 768px) {
+            nav {
+                padding: 1rem;
+            }
+
             .nav-menu {
                 display: none;
                 position: absolute;
@@ -568,6 +601,7 @@
                 gap: 0;
                 padding: 1rem;
                 box-shadow: var(--shadow-lg);
+                z-index: 99;
             }
 
             .nav-menu.active {
@@ -577,104 +611,76 @@
             .nav-menu a {
                 padding: 0.75rem;
                 border-bottom: 1px solid var(--gray-200);
+                gap: 0;
             }
 
             .hamburger {
                 display: flex;
             }
 
+            .hero {
+                padding: 3rem 1.5rem;
+            }
+
             .hero h1 {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
 
             .hero p {
-                font-size: 1rem;
-            }
-
-            .section-title {
-                font-size: 1.5rem;
-            }
-
-            .timeline-item {
-                grid-template-columns: 1fr;
-            }
-
-            .timeline-item::before {
-                left: 9px;
-            }
-
-            .timeline-marker {
-                width: 100%;
-            }
-
-            .timeline-dot {
-                margin-left: 0;
-            }
-
-            .timeline-date {
                 font-size: 0.9rem;
             }
 
             .hero-buttons {
                 flex-direction: column;
+                gap: 0.75rem;
             }
 
             .btn {
                 width: 100%;
             }
-        }
 
-        /* ============= UTILITY ============= */
-        .badge {
-            display: inline-block;
-            padding: 0.4rem 0.8rem;
-            background: var(--primary);
-            color: var(--white);
-            border-radius: 9999px;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
+            .section-title {
+                font-size: 1.4rem;
+                margin-bottom: 1.5rem;
+            }
 
-        .badge-success {
-            background: var(--success);
-        }
+            section {
+                padding: 2.5rem 0;
+            }
 
-        .badge-danger {
-            background: var(--danger);
-        }
+            .container {
+                padding: 0 1rem;
+            }
 
-        .text-center {
-            text-align: center;
-        }
+            .cards-grid,
+            .steps-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
 
-        .mt-4 {
-            margin-top: 2rem;
-        }
+            .download-buttons {
+                flex-direction: column;
+            }
 
-        .mb-4 {
-            margin-bottom: 2rem;
-        }
-
-        .hidden {
-            display: none;
+            .btn-download {
+                width: 100%;
+                justify-content: center;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- ============= HEADER ============= -->
+    <!-- HEADER -->
     <header>
-        <nav class="container" style="padding: 1rem;">
+        <nav class="container" style="padding: 1.2rem 2rem;">
             <a href="#" class="logo">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='95' fill='%231E40AF' stroke='%231e3a8a' stroke-width='3'/%3E%3Ctext x='100' y='110' font-size='48' font-weight='bold' fill='white' text-anchor='middle'%3E3%3C/text%3E%3C/svg%3E" alt="SDN 3 Kesiman">
-                <span>
-                    <div class="logo-text-main">SDN 3 KESIMAN</div>
-                    <div class="logo-text-sub">SPMB 2026/2027</div>
-                </span>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='95' fill='%23D97706' stroke='%2392400e' stroke-width='3'/%3E%3Ctext x='100' y='110' font-size='48' font-weight='bold' fill='white' text-anchor='middle'%3E3%3C/text%3E%3C/svg%3E" alt="SDN 3 Kesiman">
+                <span>SDN 3 KESIMAN</span>
             </a>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#informasi">Informasi</a></li>
                 <li><a href="#jadwal">Jadwal</a></li>
-                <li><a href="#alur">Alur Seleksi</a></li>
+                <li><a href="#alur">Alur</a></li>
                 <li><a href="#syarat">Syarat</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#kontak">Kontak</a></li>
@@ -687,186 +693,175 @@
         </nav>
     </header>
 
-    <!-- ============= HERO SECTION ============= -->
+    <!-- HERO -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>PUSAT INFORMASI SISTEM PENERIMAAN MURID BARU (SPMB)</h1>
-            <h1>SD Negeri 3 Kesiman</h1>
-            <p>Tahun Ajaran 2026/2027</p>
-            <p style="font-size: 1rem; opacity: 0.9;">Pendaftaran: 22-25 Juni 2026 | Pengumuman: 29 Juni 2026</p>
+        <div class="container">
+            <h1>PUSAT INFORMASI PENERIMAAN MURID BARU (SPMB)</h1>
+              <h1>SD NEGERI 3 KESIMAN</h1>
+            <p>TAHUN AJARAN 2026/2027</p>
+            <p style="font-size: 0.95rem; margin-top: 1rem; opacity: 0.9;">Pendaftaran: 22-25 Juni 2026 | Pengumuman: 29 Juni 2026</p>
             <div class="hero-buttons">
-                <a href="#informasi" class="btn btn-secondary">Lihat Informasi</a>
-                <a href="https://spmbsd.disdikporadps.id/" class="btn btn-primary" target="_blank">Portal Resmi SPMB SD Kota Denpasar</a>
+                <a href="#informasi" class="btn btn-white">Info Lengkap</a>
+                <a href="https://spmbsd.disdikporadps.id/" class="btn btn-primary" target="_blank">Portal SPMB Resmi</a>
             </div>
         </div>
     </section>
 
-    <!-- ============= INFORMASI PENTING ============= -->
+    <!-- INFORMASI PENTING -->
     <section id="informasi" class="container">
-        <h2 class="section-title">📋 Informasi Penting</h2>
-        <div class="info-grid">
-            <div class="info-box">
-                <h3>📅 Jadwal Pendaftaran</h3>
-                <p><strong>Tanggal:</strong> 22-25 Juni 2026</p>
-                <p><strong>Jam:</strong> 09:00 - 13:00 WITA</p>
-                <p><strong>Tempat:</strong> SD Negeri 3 Kesiman</p>
+        <h2 class="section-title">Informasi Penting</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>📅 Pendaftaran</h3>
+                <p><strong>22-25 Juni 2026</strong></p>
+                <p style="margin-top: 0.75rem; font-size: 0.85rem;">Senin - Kamis | 09:00 - 13:00 WITA | SD Negeri 3 Kesiman</p>
             </div>
-            <div class="info-box">
-                <h3>📢 Pengumuman Hasil</h3>
-                <p><strong>Tanggal:</strong> 29 Juni 2026</p>
-                <p><strong>Jam:</strong> 09:00 WITA</p>
-                <p>Bisa cek online via portal resmi atau datang langsung ke sekolah</p>
+            <div class="card">
+                <h3>📢 Pengumuman</h3>
+                <p><strong>29 Juni 2026</strong></p>
+                <p style="margin-top: 0.75rem; font-size: 0.85rem;">Senin | 09:00 WITA | Portal & Sekolah</p>
             </div>
-            <div class="info-box">
+            <div class="card">
                 <h3>✅ Daftar Ulang</h3>
-                <p><strong>Tanggal:</strong> 30 Juni - 3 Juli 2026</p>
-                <p><strong>Jam:</strong> 09:00 - 13:00 WITA</p>
-                <p>Wajib hadir di sekolah yang menerima</p>
+                <p><strong>30 Juni - 3 Juli 2026</strong></p>
+                <p style="margin-top: 0.75rem; font-size: 0.85rem;">Selasa - Jumat | 09:00 - 13:00 WITA</p>
             </div>
-        </div>
-
-        <h3 style="color: var(--primary); margin-top: 3rem; margin-bottom: 1.5rem;">📄 Dokumen Download</h3>
-        <div class="info-grid">
-            <a href="https://spmbsd.disdikporadps.id/uploads/Juknis-SPMB-2026.pdf" class="btn btn-primary" target="_blank" style="text-align: center; width: 100%;">📖 Petunjuk Teknis SPMB</a>
-            <a href="https://drive.google.com/drive/folders/1CKqFMXaWmvJ4TkbbOgdIDwSAogI1wxbR" class="btn btn-primary" target="_blank" style="text-align: center; width: 100%;">📑 Surat Pernyataan</a>
-            <a href="https://spmbsd.disdikporadps.id/" class="btn btn-success" target="_blank" style="text-align: center; width: 100%;">🌐 Portal SPMB Kota</a>
         </div>
     </section>
 
-    <!-- ============= JADWAL ============= -->
-    <section id="jadwal" class="container" style="background: var(--gray-50);">
-        <h2 class="section-title">📆 Jadwal Kegiatan SPMB 2026/2027</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-marker">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">22-25 Juni</div>
+    <!-- JADWAL -->
+    <section id="jadwal" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Jadwal Kegiatan</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">📝 22-25 Juni 2026 (Senin - Kamis)</div>
+                    <h3>Pendaftaran & Verifikasi</h3>
+                    <p><strong>Jam:</strong> 09:00 - 13:00 WITA</p>
+                    <ul>
+                        <li>Pendaftaran dilakukan secara langsung di sekolah tujuan.</li>
+                        <li>Orang tua/wali menyerahkan dokumen sesuai persyaratan yang berlaku.</li>
+                        <li>Setelah verifikasi selesai, calon murid baru akan menerima bukti pendaftaran.</li>
+                    </ul>
                 </div>
-                <div class="timeline-content">
-                    <h3>📝 Pendaftaran & Verifikasi</h3>
-                    <p><strong>Jam Layanan:</strong> 09:00 - 13:00 WITA</p>
-                    <p>Pendaftaran & Verifikasi dilakukan secara Luring di Sekolah tujuan. Orang tua/wali menyerahkan dokumen sesuai peryaratan. Calon Murid Baru mendapat bukti daftar.</p>
-                </div>
-            </div>
 
-            <div class="timeline-item">
-                <div class="timeline-marker">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">29 Juni</div>
-                </div>
-                <div class="timeline-content">
-                    <h3>📢 Pengumuman Hasil Seleksi</h3>
+                <div class="timeline-item">
+                    <div class="timeline-date">📢 29 Juni 2026 (Senin)</div>
+                    <h3>Pengumuman Hasil Seleksi</h3>
                     <p><strong>Jam:</strong> 09:00 WITA</p>
-                    <p>Pengumuman dilakukan secara luring di sekolah dan/atau daring melalui portal SPMB resmi.</p>
-                    <a href="https://spmbsd.disdikporadps.id/" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.9rem;" target="_blank">Lihat Hasil Seleksi</a>
+                    <ul>
+                        <li>Cek portal SPMB resmi</li>
+                        <li>Atau lihat pengumuman di sekolah</li>
+                    </ul>
+                    <a href="https://spmbsd.disdikporadps.id/" class="btn btn-primary" style="margin-top: 1rem; font-size: 0.85rem;" target="_blank">Lihat Hasil</a>
                 </div>
-            </div>
 
-            <div class="timeline-item">
-                <div class="timeline-marker">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">30 Juni - 3 Juli</div>
-                </div>
-                <div class="timeline-content">
-                    <h3>✅ Daftar Ulang</h3>
-                    <p><strong>Jam Layanan:</strong> 09:00 - 13:00 WITA</p>
-                    <p>Menyerahkan Surat Pernyataan Daftar Ulang kepada sekolah yang menerima. Wajib datang langsung.</p>
+                <div class="timeline-item">
+                    <div class="timeline-date">✅ 30 Juni - 3 Juli 2026 (Selasa - Jumat)</div>
+                    <h3>Daftar Ulang</h3>
+                    <p><strong>Jam:</strong> 09:00 - 13:00 WITA</p>
+                    <ul>
+                        <li>Datang ke sekolah yang menerima</li>
+                        <li>Serahkan surat pernyataan daftar ulang</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============= ALUR SELEKSI ============= -->
+    <!-- ALUR SELEKSI -->
     <section id="alur" class="container">
-        <h2 class="section-title">🔄 Alur Seleksi SPMB</h2>
-        
-        <div class="info-grid">
-            <div class="info-box" style="text-align: center;">
-                <div style="font-size: 3rem; margin-bottom: 1rem;">1️⃣</div>
+        <h2 class="section-title">Alur Seleksi</h2>
+        <div class="steps-grid">
+            <div class="step">
+                <div class="step-number">1️⃣</div>
                 <h3>Persiapan</h3>
-                <p>Siapkan dokumen seperti KK, Akta Kelahiran, KIA, dan dokumen pendukung lainnya sesuai persyaratan.</p>
+                <p>Siapkan dokumen: KK, Akta Kelahiran, KIA, dan dokumen pendukung lainnya</p>
             </div>
-
-            <div class="info-box" style="text-align: center;">
-                <div style="font-size: 3rem; margin-bottom: 1rem;">2️⃣</div>
+            <div class="step">
+                <div class="step-number">2️⃣</div>
                 <h3>Pendaftaran</h3>
-                <p>Datang ke SD Negeri 3 Kesiman dengan membawa dokumen lengkap. Dapatkan bukti daftar.</p>
+                <p>Datang ke SDN 3 Kesiman dengan dokumen lengkap</p>
             </div>
-
-            <div class="info-box" style="text-align: center;">
-                <div style="font-size: 3rem; margin-bottom: 1rem;">3️⃣</div>
+            <div class="step">
+                <div class="step-number">3️⃣</div>
                 <h3>Verifikasi</h3>
-                <p>Pihak sekolah melakukan verifikasi dokumen dan data-data pendaftaran calon siswa.</p>
+                <p>Pihak sekolah verifikasi dokumen dan data</p>
             </div>
-
-            <div class="info-box" style="text-align: center;">
-                <div style="font-size: 3rem; margin-bottom: 1rem;">4️⃣</div>
+            <div class="step">
+                <div class="step-number">4️⃣</div>
                 <h3>Seleksi</h3>
-                <p>Sistem otomatis melakukan seleksi berdasarkan jalur pendaftaran (domisili, afirmasi, mutasi).</p>
+                <p>Sistem seleksi berdasarkan jalur pendaftaran</p>
             </div>
-
-            <div class="info-box" style="text-align: center;">
-                <div style="font-size: 3rem; margin-bottom: 1rem;">5️⃣</div>
+            <div class="step">
+                <div class="step-number">5️⃣</div>
                 <h3>Pengumuman</h3>
-                <p>Hasil seleksi diumumkan melalui portal SPMB dan pengumuman di sekolah.</p>
+                <p>Hasil seleksi diumumkan di portal dan sekolah</p>
             </div>
-
-            <div class="info-box" style="text-align: center;">
-                <div style="font-size: 3rem; margin-bottom: 1rem;">6️⃣</div>
+            <div class="step">
+                <div class="step-number">6️⃣</div>
                 <h3>Daftar Ulang</h3>
-                <p>Siswa yang diterima wajib melakukan daftar ulang sesuai jadwal yang ditentukan.</p>
+                <p>Siswa diterima melakukan daftar ulang</p>
             </div>
         </div>
     </section>
 
-    <!-- ============= SYARAT PENDAFTARAN ============= -->
-    <section id="syarat" class="container" style="background: var(--gray-50);">
-        <h2 class="section-title">✅ Syarat & Ketentuan Pendaftaran</h2>
+    <!-- SYARAT PENDAFTARAN -->
+    <section id="syarat" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Syarat & Ketentuan</h2>
+            
+            <div class="req-box">
+                <h3>📌 Usia & Ketentuan Umum</h3>
+                <ul>
+                    <li>Berusia minimal 6 tahun per 1 Juli 2026 (prioritas 7-9 tahun)</li>
+                    <li>Tidak wajib pernah mengikuti pendidikan TK/RA</li>
+                    <li>Membawa dokumen asli saat mendaftar</li>
+                </ul>
+            </div>
 
-        <div class="requirements">
-            <h3>📌 Usia & Ketentuan Umum</h3>
-            <ul>
-                <li>Berusia minimal 6 tahun per 1 Juli 2026 (prioritas 7-9 tahun)</li>
-                <li>Tidak wajib pernah mengikuti pendidikan TK/RA</li>
-                <li>Membawa dokumen asli saat mendaftar</li>
-            </ul>
-        </div>
+            <div class="req-box">
+                <h3>📄 Dokumen Wajib Dibawa</h3>
+                <ul>
+                    <li>Fotokopi Kartu Keluarga (KK) Denpasar (minimal 1 Juni 2025)</li>
+                    <li>Fotokopi Akta Kelahiran atau Surat Keterangan Lahir</li>
+                    <li>Fotokopi Kartu Identitas Anak (KIA)</li>
+                    <li>Dokumen asli untuk verifikasi</li>
+                    <li>Surat Pernyataan Keabsahan Dokumen</li>
+                </ul>
+                <div class="req-download">
+                    <p>📥 Unduh Surat Pernyataan & Dokumen Pendukung</p>
+                    <div class="download-buttons">
+                        <a href="https://drive.google.com/drive/folders/1CKqFMXaWmvJ4TkbbOgdIDwSAogI1wxbR" class="btn btn-download" target="_blank">📑 Surat Pernyataan</a>
+                        <a href="https://spmbsd.disdikporadps.id/uploads/Juknis-SPMB-2026.pdf" class="btn btn-download" target="_blank">📋 Panduan Lengkap</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="requirements">
-            <h3>📄 Dokumen Wajib Dibawa</h3>
-            <ul>
-                <li>Fotokopi Kartu Keluarga (KK) Denpasar (minimal diterbitkan 1 Juni 2025)</li>
-                <li>Fotokopi Akta Kelahiran atau Surat Keterangan Lahir yang dilegalisir</li>
-                <li>Fotokopi Kartu Identitas Anak (KIA)</li>
-                <li>Dokumen asli untuk verifikasi</li>
-                <li>Surat Pernyataan Keabsahan Dokumen (diunduh dari portal)</li>
-            </ul>
-        </div>
+            <div class="req-box">
+                <h3>📋 Jalur Pendaftaran</h3>
+                <ul>
+                    <li><strong>Jalur Domisili:</strong> Untuk yang memiliki KK Kota Denpasar</li>
+                    <li><strong>Jalur Afirmasi:</strong> Untuk penyandang disabilitas/keluarga kurang mampu</li>
+                    <li><strong>Jalur Mutasi:</strong> Untuk mutasi tugas orang tua/wali</li>
+                </ul>
+            </div>
 
-        <div class="requirements">
-            <h3>📋 Jalur Pendaftaran</h3>
-            <ul>
-                <li><strong>Jalur Domisili:</strong> Untuk yang memiliki KK Kota Denpasar</li>
-                <li><strong>Jalur Afirmasi:</strong> Untuk penyandang disabilitas/keluarga kurang mampu</li>
-                <li><strong>Jalur Mutasi:</strong> Untuk mutasi tugas orang tua/wali</li>
-            </ul>
-        </div>
-
-        <div class="requirements">
-            <h3>⚠️ Catatan Penting</h3>
-            <ul>
-                <li>Peserta hanya bisa mendaftar maksimal 3 (tiga) sekolah</li>
-                <li>Harus membuat Surat Pernyataan Mendaftar 3 Sekolah (format ada di portal)</li>
-                <li>Data dan dokumen harus valid dan sesuai dengan keterangan asli</li>
-                <li>Tidak ada tes membaca, menulis, atau berhitung untuk calon siswa kelas I</li>
-            </ul>
+            <div class="req-box">
+                <h3>⚠️ Catatan Penting</h3>
+                <ul>
+                    <li>Peserta hanya bisa mendaftar maksimal 3 (tiga) sekolah</li>
+                    <li>Harus membuat Surat Pernyataan Mendaftar 3 Sekolah</li>
+                    <li>Data dan dokumen harus valid sesuai keterangan asli</li>
+                    <li>Tidak ada tes membaca, menulis, atau berhitung untuk kelas I</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <!-- ============= FAQ ============= -->
+    <!-- FAQ -->
     <section id="faq" class="container">
-        <h2 class="section-title">❓ Pertanyaan Umum (FAQ)</h2>
-
+        <h2 class="section-title">Pertanyaan Umum (FAQ)</h2>
         <div style="max-width: 800px; margin: 0 auto;">
             <div class="faq-item active">
                 <div class="faq-question" onclick="toggleFAQ(this)">
@@ -874,7 +869,7 @@
                     <span class="faq-toggle">▼</span>
                 </div>
                 <div class="faq-answer">
-                    Pendaftaran dimulai pada <strong>22 Juni 2026</strong> dan ditutup pada <strong>25 Juni 2026</strong>. Jam layanan adalah <strong>09:00 - 13:00 WITA</strong> di SD Negeri 3 Kesiman.
+                    Pendaftaran dimulai pada <strong>22 Juni 2026 (Senin)</strong> dan ditutup pada <strong>25 Juni 2026 (Kamis)</strong>. Jam layanan adalah <strong>09:00 - 13:00 WITA</strong> di SD Negeri 3 Kesiman.
                 </div>
             </div>
 
@@ -884,22 +879,12 @@
                     <span class="faq-toggle">▼</span>
                 </div>
                 <div class="faq-answer">
-                    Dokumen yang harus dibawa adalah:<br>
-                    • Fotokopi KK Denpasar (minimal dari 1 Juni 2025)<br>
-                    • Fotokopi Akta Kelahiran/Surat Keterangan Lahir yang dilegalisir<br>
+                    Dokumen yang harus dibawa:<br><br>
+                    • Fotokopi KK Denpasar (minimal 1 Juni 2025)<br>
+                    • Fotokopi Akta Kelahiran/Surat Keterangan Lahir<br>
                     • Fotokopi KIA<br>
                     • Surat Pernyataan Keabsahan Dokumen<br>
                     • Dokumen asli untuk verifikasi
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    <span>Kapan pengumuman hasil seleksi?</span>
-                    <span class="faq-toggle">▼</span>
-                </div>
-                <div class="faq-answer">
-                    Pengumuman hasil seleksi dilakukan pada <strong>29 Juni 2026 pukul 09:00 WITA</strong>. Pengumuman dapat dilihat secara luring di sekolah atau daring melalui portal SPMB resmi (spmbsd.disdikporadps.id).
                 </div>
             </div>
 
@@ -909,7 +894,7 @@
                     <span class="faq-toggle">▼</span>
                 </div>
                 <div class="faq-answer">
-                    Calon siswa harus berusia minimal <strong>6 tahun per 1 Juli 2026</strong>. Prioritas diberikan kepada yang berusia 7-9 tahun. Ada pengecualian untuk anak dengan potensi kecerdasan/bakat istimewa (minimal 5 tahun 6 bulan) dengan rekomendasi psikolog.
+                    Calon siswa harus berusia minimal <strong>6 tahun per 1 Juli 2026</strong>. Prioritas diberikan kepada yang berusia 7-9 tahun. Ada pengecualian untuk anak berbakat istimewa (minimal 5,5 tahun) dengan rekomendasi psikolog.
                 </div>
             </div>
 
@@ -919,17 +904,7 @@
                     <span class="faq-toggle">▼</span>
                 </div>
                 <div class="faq-answer">
-                    <strong>Tidak ada</strong> tes membaca, menulis, atau berhitung untuk calon siswa Kelas I SD. Seleksi dilakukan berdasarkan kelengkapan dokumen dan jalur pendaftaran yang dipilih.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFAQ(this)">
-                    <span>Berapa kuota siswa yang diterima?</span>
-                    <span class="faq-toggle">▼</span>
-                </div>
-                <div class="faq-answer">
-                    Kuota siswa ditetapkan oleh Dinas Pendidikan Kota Denpasar. Anda dapat mengecek daya tampung SDN 3 Kesiman melalui portal SPMB resmi atau menghubungi sekolah langsung.
+                    <strong>Tidak ada</strong> tes membaca, menulis, atau berhitung untuk calon siswa Kelas I. Seleksi dilakukan berdasarkan kelengkapan dokumen dan jalur pendaftaran yang dipilih.
                 </div>
             </div>
 
@@ -939,7 +914,7 @@
                     <span class="faq-toggle">▼</span>
                 </div>
                 <div class="faq-answer">
-                    Peserta bisa mendaftar di maksimal <strong>3 (tiga) sekolah</strong>. Harus membuat Surat Pernyataan Mendaftar 3 Sekolah yang format-nya dapat diunduh dari portal SPMB resmi.
+                    Peserta bisa mendaftar di maksimal <strong>3 (tiga) sekolah</strong>. Harus membuat Surat Pernyataan Mendaftar 3 Sekolah yang bisa diunduh dari portal SPMB resmi.
                 </div>
             </div>
 
@@ -949,105 +924,88 @@
                     <span class="faq-toggle">▼</span>
                 </div>
                 <div class="faq-answer">
-                    Daftar ulang dilakukan pada <strong>30 Juni - 3 Juli 2026</strong> pada jam <strong>09:00 - 13:00 WITA</strong> di <strong>sekolah yang menerima</strong> (bukan sekolah tempat mendaftar awal). Harus membawa Surat Pernyataan Daftar Ulang.
+                    Daftar ulang dilakukan <strong>30 Juni - 3 Juli 2026 (Selasa - Jumat)</strong> pada jam <strong>09:00 - 13:00 WITA</strong> di <strong>sekolah yang menerima</strong>. Harus membawa Surat Pernyataan Daftar Ulang.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Bagaimana cara cek hasil seleksi?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Hasil seleksi bisa dicek melalui dua cara:<br><br>
+                    1. Kunjungi portal SPMB resmi (spmbsd.disdikporadps.id)<br>
+                    2. Datang langsung ke SD Negeri 3 Kesiman untuk melihat pengumuman
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============= KONTAK ============= -->
-    <section id="kontak" class="container" style="background: var(--gray-50);">
-        <h2 class="section-title">📞 Hubungi Kami</h2>
-
-        <div class="contact-grid">
-            <div class="contact-card">
-                <div class="contact-avatar">📱</div>
-                <h3>Pak Iwan</h3>
-                <a href="https://wa.me/6281246598077" class="btn btn-primary" target="_blank" style="width: 100%;">💬 Chat WhatsApp</a>
+    <!-- KONTAK -->
+    <section id="kontak" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-avatar">📱</div>
+                    <h3>Pak Iwan</h3>
+                    <p>Operator SPMB</p>
+                    <a href="https://wa.me/6281246598077" class="btn btn-primary" target="_blank">Chat WhatsApp</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-avatar">👔</div>
+                    <h3>Pak Komang</h3>
+                    <p>Admin Sekolah</p>
+                    <a href="https://wa.me/6281529366831" class="btn btn-primary" target="_blank">Chat WhatsApp</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-avatar">📸</div>
+                    <h3>Instagram</h3>
+                    <p>@sdn_3kesiman</p>
+                    <a href="https://www.instagram.com/sdn_3kesiman/" class="btn btn-white" target="_blank">Kunjungi</a>
+                </div>
             </div>
 
-            <div class="contact-card">
-                <div class="contact-avatar">👔</div>
-                <h3>Pak Komang</h3>
-                
-                <a href="https://wa.me/6281529366831" class="btn btn-primary" target="_blank" style="width: 100%;">💬 Chat WhatsApp</a>
+            <div class="address-box">
+                <h3>📍 Alamat Sekolah</h3>
+                <p>
+                    SD Negeri 3 Kesiman<br>
+                    Jl. Bakung No. 16, Kesiman Kertalangu<br>
+                    Kec. Denpasar Tim., Kota Denpasar, Bali
+                </p>
             </div>
-
-            <div class="contact-card">
-                <div class="contact-avatar">📸</div>
-                <h3>Instagram</h3>
-                <p>@sdn_3kesiman</p>
-                <a href="https://www.instagram.com/sdn_3kesiman/" class="btn btn-secondary" target="_blank" style="width: 100%;">🔗 Kunjungi</a>
-            </div>
-        </div>
-
-        <div class="cta-form">
-            <h3>Punya Pertanyaan? 🤔</h3>
-            <form onsubmit="submitQuestion(event)">
-                <div class="form-group">
-                    <label for="name">Nama Lengkap</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Nomor WhatsApp</label>
-                    <input type="tel" id="phone" placeholder="62812..." required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Pertanyaan Anda</label>
-                    <textarea id="message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-success" style="width: 100%;">Kirim Pertanyaan</button>
-            </form>
-        </div>
-
-        <div style="background: #E8F5E9; border-left: 4px solid var(--success); padding: 1.5rem; border-radius: 0.5rem; text-align: center; margin-top: 2rem;">
-            <p style="color: var(--gray-900); font-weight: 600;">📍 Alamat Sekolah</p>
-            <p style="color: var(--gray-700); margin-top: 0.5rem;">
-                SD Negeri 3 Kesiman<br>
-                Jl. Bakung No. 16, Kesiman Kertalangu<br>
-                Kec. Denpasar Tim., Kota Denpasar, Bali
-            </p>
         </div>
     </section>
 
-    <!-- ============= FOOTER ============= -->
+    <!-- FOOTER -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>📚 Tentang SPMB</h4>
-                <p style="color: var(--gray-300); font-size: 0.95rem;">
-                    Sistem Penerimaan Peserta Didik Baru (SPMB) adalah mekanisme pendaftaran siswa baru SD yang transparan, objektif, dan terintegrasi di Kota Denpasar.
-                </p>
+                <h4>Tentang SPMB</h4>
+                <p>Sistem Penerimaan Peserta Didik Baru adalah mekanisme pendaftaran siswa baru SD yang transparan, objektif, dan terintegrasi di Kota Denpasar.</p>
             </div>
-
             <div class="footer-section">
-                <h4>🔗 Tautan Penting</h4>
-                <a href="#informasi">Informasi Penting</a>
-                <a href="#jadwal">Jadwal Kegiatan</a>
-                <a href="#alur">Alur Seleksi</a>
-                <a href="#syarat">Syarat & Ketentuan</a>
-                <a href="#faq">Pertanyaan Umum</a>
-                <a href="https://spmbsd.disdikporadps.id/" target="_blank">Portal SPMB Resmi</a>
+                <h4>Menu Cepat</h4>
+                <a href="#informasi">Informasi</a>
+                <a href="#jadwal">Jadwal</a>
+                <a href="#alur">Alur</a>
+                <a href="#syarat">Syarat</a>
+                <a href="#faq">FAQ</a>
+                <a href="#kontak">Kontak</a>
             </div>
-
             <div class="footer-section">
-                <h4>📧 Kontak</h4>
-                <p style="color: var(--gray-300); font-size: 0.95rem;">
-                    <strong>WhatsApp:</strong> +62-812-4659-8077<br>
-                    <strong>Instagram:</strong> @sdn_3kesiman<br>
-                    <strong>Alamat:</strong> Jl. Bakung No. 16, Denpasar
-                </p>
+                <h4>Info Kontak</h4>
+                <p><strong>WhatsApp:</strong> +62-812-4659-8077<br><strong>Instagram:</strong> @sdn_3kesiman<br><strong>Lokasi:</strong> Jl. Bakung No. 16, Denpasar</p>
             </div>
         </div>
-
         <div class="footer-bottom">
-            <p>&copy; 2026 SD Negeri 3 Kesiman. Semua hak dilindungi. | Dibuat dengan ❤️ untuk pendidikan berkualitas</p>
+            <p>&copy; 2026 SD Negeri 3 Kesiman | Dibuat untuk pendidikan berkualitas</p>
         </div>
     </footer>
 
-    <!-- ============= JAVASCRIPT ============= -->
     <script>
-        // ========== HAMBURGER MENU ==========
+        // HAMBURGER MENU
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('navMenu');
 
@@ -1055,72 +1013,25 @@
             navMenu.classList.toggle('active');
         });
 
-        // Close menu when link clicked
         document.querySelectorAll('.nav-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
             });
         });
 
-        // ========== FAQ TOGGLE ==========
+        // FAQ TOGGLE
         function toggleFAQ(element) {
             const parent = element.parentElement;
             const wasActive = parent.classList.contains('active');
 
-            // Close all other items
             document.querySelectorAll('.faq-item').forEach(item => {
                 item.classList.remove('active');
             });
 
-            // Toggle current item
             if (!wasActive) {
                 parent.classList.add('active');
             }
         }
-
-        // ========== FORM SUBMIT ==========
-        function submitQuestion(e) {
-            e.preventDefault();
-
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const message = document.getElementById('message').value;
-
-            // Format WhatsApp message
-            const waMessage = `Halo, saya ${name}%0A%0APertanyaan: ${message}`;
-            const waUrl = `https://wa.me/6281246598077?text=${waMessage}`;
-
-            // Reset form
-            e.target.reset();
-
-            // Show success message
-            alert('Pertanyaan akan dikirim ke WhatsApp. Terima kasih! 😊');
-
-            // Redirect to WhatsApp
-            window.open(waUrl, '_blank');
-        }
-
-        // ========== SCROLL ANIMATION ==========
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.info-box, .timeline-item, .contact-card, .faq-item, .requirements').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'all 0.6s ease';
-            observer.observe(el);
-        });
     </script>
 </body>
 </html>

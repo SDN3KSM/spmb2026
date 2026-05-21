@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPMB SD Negeri 3 Kesiman | Pendaftaran 2026/2027</title>
     <meta name="description" content="Pusat Informasi SPMB SD Negeri 3 Kesiman Tahun Ajaran 2026/2027">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     
     <style>
         * {
@@ -673,60 +671,7 @@
         }
     </style>
 </head>
- 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script>
-    // SWIPER
-    var swiper = new Swiper(".mySwiper", {
-        loop: true,
-
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-
-        speed: 1000,
-
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-
-    // HAMBURGER MENU
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('navMenu');
-
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-        });
-    });
-
-    // FAQ TOGGLE
-    function toggleFAQ(element) {
-        const parent = element.parentElement;
-        const wasActive = parent.classList.contains('active');
-
-        document.querySelectorAll('.faq-item').forEach(item => {
-            item.classList.remove('active');
-        });
-
-        if (!wasActive) {
-            parent.classList.add('active');
-        }
-    }
-</script>
 <body>
     <!-- HEADER -->
     <header>
@@ -755,7 +700,7 @@
     <section class="hero">
         <div class="container">
             <h1>PUSAT INFORMASI PENERIMAAN MURID BARU (SPMB)</h1>
-              <h1>SD NEGERI 3 KESIMAN</h1>
+            <h1>SD NEGERI 3 KESIMAN</h1>
             <p>TAHUN AJARAN 2026/2027</p>
             <p style="font-size: 0.95rem; margin-top: 1rem; opacity: 0.9;">Pendaftaran: 22-25 Juni 2026 | Pengumuman: 29 Juni 2026</p>
             <div class="hero-buttons">
@@ -764,71 +709,36 @@
             </div>
         </div>
     </section>
-   <!-- INFOGRAFIS -->
 
-<section style="padding:80px 20px;background:#f8fbff;">
+    <!-- INFOGRAFIS / CAROUSEL -->
+    <section style="padding:80px 20px;background:#f8fbff;">
+        <h2 style="text-align:center; font-size:48px; font-weight:700; margin-bottom:40px; color:#1e3a8a;">Infografis SPMB</h2>
 
-  <h2 style="
-    text-align:center;
-    font-size:48px;
-    font-weight:700;
-    margin-bottom:40px;
-    color:#1e3a8a;
-  ">
-  </h2>
+        <div class="swiper mySwiper" style="width:100%; max-width:700px; aspect-ratio:4/5; margin:auto; border-radius:30px; overflow:hidden; box-shadow:0 15px 40px rgba(0,0,0,0.12);">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="1.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Slide 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="2.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Slide 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="3.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Slide 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="4.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Slide 4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="5.jpg" style="width:100%;height:100%;object-fit:cover;" alt="Slide 5">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
 
-<div class="swiper mySwiper" style="
-    width:100%;
-    max-width:700px;
-    aspect-ratio:4/5;
-    margin:auto;
-    border-radius:30px;
-    overflow:hidden;
-    box-shadow:0 15px 40px rgba(0,0,0,0.12);
-  ">
-
-    <div class="swiper-wrapper">
-
-      <div class="swiper-slide">
-        <img src="1.jpg"
-        style="width:100%;height:100%;object-fit:cover;">
-      </div>
-
-      <div class="swiper-slide">
-        <img src="2.jpg"
-        style="width:100%;height:100%;object-fit:cover;">
-      </div>
-
-      <div class="swiper-slide">
-        <img src="3.jpg"
-        style="width:100%;height:100%;object-fit:cover;">
-      </div>
-
-      <div class="swiper-slide">
-        <img src="4.jpg"
-        style="width:100%;height:100%;object-fit:cover;">
-      </div>
-
-      <div class="swiper-slide">
-        <img src="5.jpg"
-        style="width:100%;height:100%;object-fit:cover;">
-      </div>
-
-    </div>
-
-    <div class="swiper-pagination"></div>
-
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-
-  </div>
-</section>
-
-<!-- SWIPER JS -->
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-   <!-- INFORMASI PENTING -->
+    <!-- INFORMASI PENTING -->
     <section id="informasi" class="container">
         <h2 class="section-title">Informasi Penting</h2>
         <div class="cards-grid">
@@ -1072,13 +982,11 @@
                 <div class="contact-card">
                     <div class="contact-avatar">📱</div>
                     <h3>Pak Iwan</h3>
-                   
                     <a href="https://wa.me/6281246598077" class="btn btn-primary" target="_blank">Chat WhatsApp</a>
                 </div>
                 <div class="contact-card">
                     <div class="contact-avatar">👔</div>
                     <h3>Pak Komang</h3>
-                    
                     <a href="https://wa.me/6281529366831" class="btn btn-primary" target="_blank">Chat WhatsApp</a>
                 </div>
                 <div class="contact-card">
@@ -1126,7 +1034,28 @@
         </div>
     </footer>
 
+    <!-- SWIPER LIBRARY -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
+        // SWIPER INITIALIZATION
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            speed: 1000,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
         // HAMBURGER MENU
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('navMenu');

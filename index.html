@@ -674,26 +674,58 @@
     </style>
 </head>
  
-  var swiper = new Swiper(".mySwiper", {
-    loop: true,
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+<script>
+    // SWIPER
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
 
-    speed: 1000,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
 
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+        speed: 1000,
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    // HAMBURGER MENU
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+
+    // FAQ TOGGLE
+    function toggleFAQ(element) {
+        const parent = element.parentElement;
+        const wasActive = parent.classList.contains('active');
+
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.classList.remove('active');
+        });
+
+        if (!wasActive) {
+            parent.classList.add('active');
+        }
+    }
 </script>
 <body>
     <!-- HEADER -->
@@ -796,8 +828,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script>
-    <!-- INFORMASI PENTING -->
+   <!-- INFORMASI PENTING -->
     <section id="informasi" class="container">
         <h2 class="section-title">Informasi Penting</h2>
         <div class="cards-grid">

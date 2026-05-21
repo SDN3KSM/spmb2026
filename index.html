@@ -234,6 +234,43 @@
             text-align: center;
         }
 
+        .section-title-gradient {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .section-title-gradient::before,
+        .section-title-gradient::after {
+            content: '';
+            flex: 1;
+            height: 4px;
+            border-radius: 2px;
+            background: linear-gradient(to right, transparent, var(--primary));
+        }
+
+        .section-title-gradient::after {
+            background: linear-gradient(to left, transparent, var(--primary));
+        }
+
+        .section-title-lined {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .section-title-lined::before,
+        .section-title-lined::after {
+            content: '';
+            flex: 1;
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--primary));
+        }
+
+        .section-title-lined::after {
+            background: linear-gradient(to left, transparent, var(--primary));
+        }
+
         /* INFO CARDS */
         .cards-grid {
             display: grid;
@@ -719,6 +756,7 @@
             <p>TAHUN AJARAN 2026/2027</p>
             <p style="font-size: 0.95rem; margin-top: 1rem; opacity: 0.9;">Pendaftaran: 22-25 Juni 2026 | Pengumuman: 29 Juni 2026</p>
             <div class="hero-buttons">
+                <a href="#syarat" class="btn btn-white">Syarat & Ketentuan</a>
 <a href="https://spmbsd.disdikporadps.id/" class="btn btn-primary" target="_blank">PORTAL RESMI SPMB SD KOTA DENPASAR</a>
                 <a href="#kontak" class="btn btn-accent">Kontak</a>
             </div>
@@ -727,7 +765,7 @@
 
     <!-- INFOGRAFIS / CAROUSEL -->
     <section style="padding:80px 20px;background:#f8fbff;">
-        <h2 style="text-align:center; font-size:48px; font-weight:700; margin-bottom:40px; color:#1e3a8a;">Infografis SPMB</h2>
+        <h2 class="section-title section-title-gradient" style="font-size:48px;">Infografis SPMB</h2>
 
         <div class="swiper mySwiper" style="width:100%; max-width:700px; aspect-ratio:4/5; margin:auto; border-radius:30px; overflow:hidden; box-shadow:0 15px 40px rgba(0,0,0,0.12);">
             <div class="swiper-wrapper">
@@ -757,7 +795,7 @@
     <!-- JADWAL -->
     <section id="jadwal" class="bg-light">
         <div class="container">
-            <h2 class="section-title">Jadwal Kegiatan</h2>
+            <h2 class="section-title section-title-lined">Jadwal Kegiatan</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-date">📝 22-25 Juni 2026 (Senin - Kamis)</div>
@@ -796,7 +834,7 @@
 
     <!-- ALUR SELEKSI -->
     <section id="alur" class="container">
-        <h2 class="section-title">Alur Seleksi</h2>
+        <h2 class="section-title section-title-lined">Alur Seleksi</h2>
         <div class="steps-grid">
             <div class="step">
                 <div class="step-number">1️⃣</div>
@@ -834,7 +872,7 @@
     <!-- SYARAT PENDAFTARAN -->
     <section id="syarat" class="bg-light">
         <div class="container">
-            <h2 class="section-title" style="font-size: 3.6rem;">Syarat & Ketentuan</h2>
+            <h2 class="section-title section-title-gradient" style="font-size: 3.6rem;">Syarat & Ketentuan</h2>
             
             <div class="req-box">
                 <h3>📌 Usia & Ketentuan Umum</h3>
@@ -887,7 +925,7 @@
 
     <!-- FAQ -->
     <section id="faq" class="container">
-        <h2 class="section-title">Pertanyaan Umum (FAQ)</h2>
+        <h2 class="section-title section-title-lined">Pertanyaan Umum (FAQ)</h2>
         <div style="max-width: 800px; margin: 0 auto;">
             <div class="faq-item active">
                 <div class="faq-question" onclick="toggleFAQ(this)">
@@ -971,7 +1009,7 @@
     <!-- KONTAK -->
     <section id="kontak" class="bg-light">
         <div class="container">
-            <h2 class="section-title">Hubungi Kami</h2>
+            <h2 class="section-title section-title-lined">Hubungi Kami</h2>
             <div class="contact-grid">
                 <div class="contact-card">
                     <div class="contact-avatar" style="background: #25D366;"><i class="fab fa-whatsapp"></i></div>
